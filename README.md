@@ -1,0 +1,3 @@
+# Sandy Pro — Smart Mining Classification System
+
+Initializing repository...
