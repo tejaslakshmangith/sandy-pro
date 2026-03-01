@@ -1,0 +1,145 @@
+{% extends "base.html" %}
+{% block title %}Sandy Pro — Classify Sample{% endblock %}
+{% block extra_css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/upload.css') }}"/>
+{% endblock %}
+
+{% block content %}
+<!-- Hero -->
+<section class="hero">
+  <canvas id="particle-canvas"></canvas>
+  <div class="container" style="position:relative">
+    <h1 class="hero-title">⛏ SANDY PRO</h1>
+    <p class="hero-subtitle">Smart Mining Classification System &mdash; Powered by <span>Gemini 2.5 Pro</span></p>
+  </div>
+</section>
+
+<!-- Upload Section -->
+<section class="upload-section">
+  <div class="container">
+    <div id="alert-box" class="alert alert-error d-none"></div>
+
+    <form id="classify-form" enctype="multipart/form-data">
+      <div class="upload-grid">
+        <!-- Main upload area -->
+        <div>
+          <div class="card">
+            <div class="card-header">📤 Upload Sample Image</div>
+
+            <div class="drop-zone" id="drop-zone">
+              <input type="file" id="image-input" name="image" accept=".png,.jpg,.jpeg,.webp,.bmp"/>
+              <div id="drop-default">
+                <div class="drop-zone-icon">🪨</div>
+                <div class="drop-zone-text">Drag &amp; drop your rock/mineral image here</div>
+                <div class="drop-zone-hint">or click to browse &bull; PNG, JPG, JPEG, WEBP, BMP &bull; max 16MB</div>
+              </div>
+              <div class="preview-wrap" id="preview-wrap">
+                <img id="preview-img" class="preview-img" src="" alt="Preview"/>
+                <span id="preview-name" class="preview-name"></span>
+                <button type="button" class="btn btn-secondary" id="clear-image" style="font-size:0.8rem;padding:4px 12px;">✕ Remove</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="or-divider">OR</div>
+
+          <div class="card">
+            <div class="card-header">📝 Text Description</div>
+            <div class="form-group">
+              <label class="form-label" for="description">Describe the sample (color, texture, luster, hardness, etc.)</label>
+              <textarea
+                id="description"
+                name="description"
+                class="form-control"
+                rows="4"
+                placeholder="e.g. Shiny brass-yellow mineral with cubic crystals, heavy, found in hydrothermal vein with quartz..."
+                style="resize:vertical;"
+              ></textarea>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary analyze-btn" id="analyze-btn">
+            <span id="btn-icon">🔬</span>
+            <span id="btn-text">ANALYZE SAMPLE</span>
+          </button>
+        </div>
+
+        <!-- Sidebar -->
+        <div>
+          <div class="card sidebar-card">
+            <div class="card-header">ℹ️ How It Works</div>
+            <ol style="padding-left:1.25rem;color:var(--text-muted);font-size:0.88rem;line-height:2;">
+              <li>Upload an image of your rock or mineral sample</li>
+              <li>Optionally add a text description for better accuracy</li>
+              <li>Click <strong style="color:var(--accent-gold)">Analyze Sample</strong></li>
+              <li>Get full AI-powered classification with grade A1–C2</li>
+            </ol>
+          </div>
+
+          <div class="card sidebar-card">
+            <div class="card-header">⭐ Grade Scale</div>
+            <div style="font-size:0.82rem;">
+              {% set grades = [
+                ('A1','#00ff88','≥95%','Premium Export'),
+                ('A2','#44ff66','85–94%','High Commercial'),
+                ('A3','#88ff44','75–84%','Standard Industrial'),
+                ('B1','#ffcc00','65–74%','Low Industrial'),
+                ('B2','#ff8800','55–64%','Processing Required'),
+                ('B3','#ff4400','45–54%','Heavy Processing'),
+                ('C1','#cc2200','30–44%','Marginal Viability'),
+                ('C2','#880000','&lt;30%','Waste/Gangue'),
+              ] %}
+              {% for code, color, purity, label in grades %}
+              <div class="info-row" style="padding:0.4rem 0;border-bottom:1px solid var(--border-color);">
+                <span style="font-weight:700;color:{{ color }};width:28px;">{{ code }}</span>
+                <span style="color:var(--text-muted);font-size:0.78rem;flex:1;margin:0 8px;">{{ purity }}</span>
+                <span style="color:var(--text-primary);">{{ label }}</span>
+              </div>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- Feature Cards -->
+<section style="padding-bottom:3rem;">
+  <div class="container">
+    <div class="feature-grid">
+      <div class="feature-item">
+        <div class="feature-icon">📷</div>
+        <div class="feature-title">Upload Image</div>
+        <div class="feature-desc">PNG, JPG, WEBP, BMP up to 16MB</div>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon">🤖</div>
+        <div class="feature-title">AI Analysis</div>
+        <div class="feature-desc">Gemini 2.5 Pro deep geological analysis</div>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon">⭐</div>
+        <div class="feature-title">Quality Grade</div>
+        <div class="feature-desc">A1–C2 grading with purity %, commercial value</div>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon">📋</div>
+        <div class="feature-title">Full Report</div>
+        <div class="feature-desc">Elements, uses, mining suitability & market value</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Loading Overlay -->
+<div class="loading-overlay" id="loading-overlay">
+  <div class="loading-spinner-large"></div>
+  <div class="loading-text">Analyzing sample with Gemini 2.5 Pro…</div>
+  <div class="loading-sub">Performing deep geological analysis. This may take a few seconds.</div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script src="{{ url_for('static', filename='js/upload.js') }}"></script>
+{% endblock %}

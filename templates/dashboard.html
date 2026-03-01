@@ -1,0 +1,89 @@
+{% extends "base.html" %}
+{% block title %}Sandy Pro — Analytics Dashboard{% endblock %}
+{% block extra_css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/dashboard.css') }}"/>
+{% endblock %}
+
+{% block content %}
+<div class="container">
+  <div class="dashboard-header">
+    <h1 class="dashboard-title">📊 Analytics Dashboard</h1>
+    <p class="dashboard-subtitle">Dataset statistics and mining intelligence overview</p>
+  </div>
+
+  <!-- Stat cards -->
+  <div class="stat-cards">
+    <div class="stat-card">
+      <div class="stat-label">Total Records</div>
+      <div class="stat-value" id="stat-total">—</div>
+      <div class="stat-sub">in dataset</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">Avg Purity</div>
+      <div class="stat-value" id="stat-purity">—</div>
+      <div class="stat-sub">percent</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">Premium Grade (A1)</div>
+      <div class="stat-value" id="stat-a1">—</div>
+      <div class="stat-sub">records</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">Categories</div>
+      <div class="stat-value" id="stat-categories">4</div>
+      <div class="stat-sub">ore · mineral · rock · stone</div>
+    </div>
+  </div>
+
+  <!-- Charts row 1 -->
+  <div class="charts-grid">
+    <div class="chart-card">
+      <div class="chart-title">🗂 Category Distribution</div>
+      <div class="chart-container"><canvas id="chart-category"></canvas></div>
+    </div>
+    <div class="chart-card">
+      <div class="chart-title">⭐ Grade Distribution (A1–C2)</div>
+      <div class="chart-container"><canvas id="chart-grade"></canvas></div>
+    </div>
+  </div>
+
+  <!-- Charts row 2 -->
+  <div class="charts-grid">
+    <div class="chart-card">
+      <div class="chart-title">💰 Commercial Value Breakdown</div>
+      <div class="chart-container"><canvas id="chart-commercial"></canvas></div>
+    </div>
+    <div class="chart-card">
+      <div class="chart-title">📈 Avg Purity by Category</div>
+      <div class="chart-container"><canvas id="chart-purity"></canvas></div>
+    </div>
+  </div>
+
+  <!-- Recent analyses (session-based) -->
+  <div class="recent-table-card">
+    <div class="chart-title">🕐 Recent Analyses</div>
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>Category</th>
+            <th>Grade</th>
+            <th>Purity</th>
+            <th>Commercial Value</th>
+          </tr>
+        </thead>
+        <tbody id="recent-table-body">
+          <tr><td colspan="6" style="text-align:center;color:var(--text-muted);padding:2rem;">No recent analyses. <a href="/" style="color:var(--accent-gold);">Analyze a sample</a> to see results here.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<script src="{{ url_for('static', filename='js/dashboard.js') }}"></script>
+{% endblock %}

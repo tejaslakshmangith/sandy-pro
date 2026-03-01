@@ -1,0 +1,338 @@
+id,name,category,chemical_formula,color,hardness_mohs,luster,streak,cleavage,fracture,specific_gravity,crystal_system,formation_type,primary_elements,purity_percentage,quality_grade,commercial_value,industrial_uses,mining_region,market_value_usd_per_ton,extraction_difficulty,environmental_impact
+1,Hematite,ore,Fe2O3,red-brown,5.5,metallic,red-brown,none,uneven,5.3,trigonal,sedimentary,"Fe,O",97,A1,premium,"steel production,pigments,paints",Pilbara Australia,120,easy,moderate
+2,Hematite,ore,Fe2O3,silver-gray,5.5,metallic,red-brown,none,uneven,5.3,trigonal,sedimentary,"Fe,O",88,A2,premium,steel production,Carajas Brazil,95,easy,moderate
+3,Hematite,ore,Fe2O3,dark-brown,5.5,submetallic,red-brown,none,uneven,5.1,trigonal,sedimentary,"Fe,O",72,B1,high,steel production,Labrador Canada,70,easy,moderate
+4,Hematite,ore,Fe2O3,brown,5.5,dull,red-brown,none,uneven,4.8,trigonal,sedimentary,"Fe,O",52,B3,low,low-grade steel,Lorraine France,45,moderate,moderate
+5,Hematite,ore,Fe2O3,pale-brown,5.0,dull,red,none,uneven,4.5,trigonal,sedimentary,"Fe,O",38,C1,low,processing feed,Alabama USA,28,moderate,moderate
+6,Magnetite,ore,Fe3O4,black,6,metallic,black,none,uneven,5.2,cubic,igneous,"Fe,O",98,A1,premium,"steel production,magnets",Kiruna Sweden,130,easy,low
+7,Magnetite,ore,Fe3O4,black,6,metallic,black,none,uneven,5.2,cubic,igneous,"Fe,O",87,A2,premium,steel production,Iron Mountain USA,105,easy,low
+8,Magnetite,ore,Fe3O4,dark-gray,6,submetallic,black,none,uneven,5.0,cubic,igneous,"Fe,O",68,B1,medium,steel production,Urals Russia,72,moderate,moderate
+9,Magnetite,ore,Fe3O4,gray,6,dull,black,none,uneven,4.7,cubic,igneous,"Fe,O",42,C1,low,processing feed,Ontario Canada,38,moderate,moderate
+10,Limonite,ore,FeO(OH),yellow-brown,5,dull,yellow-brown,none,uneven,3.8,amorphous,sedimentary,"Fe,O,H",62,B2,medium,"iron pigment,steel",Lorraine France,48,moderate,low
+11,Limonite,ore,FeO(OH),brown,5,dull,yellow,none,uneven,3.6,amorphous,sedimentary,"Fe,O,H",48,B3,low,iron pigment,Queensland Australia,32,moderate,low
+12,Limonite,ore,FeO(OH),yellow,4.5,dull,yellow,none,uneven,3.4,amorphous,sedimentary,"Fe,O,H",35,C1,low,low-grade processing,Cuba,22,difficult,low
+13,Goethite,ore,FeO(OH),yellow-brown,5.5,adamantine,yellow-brown,perfect,uneven,4.3,orthorhombic,sedimentary,"Fe,O,H",78,A3,high,"iron pigment,steel",Minas Gerais Brazil,75,moderate,low
+14,Goethite,ore,FeO(OH),dark-brown,5.5,silky,yellow,perfect,uneven,4.0,orthorhombic,sedimentary,"Fe,O,H",58,B2,medium,iron pigment,Western Australia,50,moderate,low
+15,Goethite,ore,FeO(OH),orange,5,dull,yellow,perfect,uneven,3.7,orthorhombic,sedimentary,"Fe,O,H",38,C1,low,industrial pigment,Alabama USA,28,difficult,low
+16,Siderite,ore,FeCO3,yellow-brown,3.5,vitreous,white,perfect,uneven,3.96,trigonal,sedimentary,"Fe,C,O",82,A3,high,"iron production,flux",Styria Austria,68,moderate,moderate
+17,Siderite,ore,FeCO3,gray-brown,3.5,vitreous,white,perfect,uneven,3.8,trigonal,sedimentary,"Fe,C,O",62,B2,medium,iron production,Bilbao Spain,52,moderate,moderate
+18,Siderite,ore,FeCO3,brown,3.5,dull,white,perfect,uneven,3.6,trigonal,sedimentary,"Fe,C,O",42,C1,low,low-grade iron,Cornwall UK,30,difficult,moderate
+19,Chalcopyrite,ore,CuFeS2,brass-yellow,3.5,metallic,greenish-black,none,uneven,4.2,tetragonal,hydrothermal,"Cu,Fe,S",96,A1,premium,"copper production,electronics",Chuquicamata Chile,8500,moderate,high
+20,Chalcopyrite,ore,CuFeS2,yellow,3.5,metallic,greenish-black,none,uneven,4.2,tetragonal,hydrothermal,"Cu,Fe,S",82,A3,high,copper production,Bingham Canyon USA,7200,moderate,high
+21,Chalcopyrite,ore,CuFeS2,tarnished-yellow,3.5,metallic,greenish,none,uneven,4.0,tetragonal,hydrothermal,"Cu,Fe,S",63,B2,medium,copper extraction,Katanga DRC,5500,difficult,high
+22,Malachite,ore,Cu2(CO3)(OH)2,green,3.5,vitreous,pale-green,perfect,uneven,4.0,monoclinic,hydrothermal,"Cu,C,O,H",88,A2,premium,"copper,jewelry,pigment",Katanga DRC,9000,moderate,moderate
+23,Malachite,ore,Cu2(CO3)(OH)2,bright-green,3.5,silky,pale-green,perfect,uneven,3.9,monoclinic,hydrothermal,"Cu,C,O,H",68,B1,medium,copper extraction,Ural Russia,7500,moderate,moderate
+24,Malachite,ore,Cu2(CO3)(OH)2,pale-green,3.5,dull,green,perfect,uneven,3.7,monoclinic,hydrothermal,"Cu,C,O,H",48,B3,low,ornamental,Arizona USA,4000,difficult,moderate
+25,Azurite,ore,Cu3(CO3)2(OH)2,deep-blue,3.5,vitreous,blue,perfect,conchoidal,3.8,monoclinic,hydrothermal,"Cu,C,O,H",85,A2,premium,"copper,pigment,jewelry",Chessy France,8800,moderate,moderate
+26,Azurite,ore,Cu3(CO3)2(OH)2,azure-blue,3.5,vitreous,blue,perfect,conchoidal,3.7,monoclinic,hydrothermal,"Cu,C,O,H",62,B2,medium,copper extraction,Bisbee USA,6000,difficult,moderate
+27,Bornite,ore,Cu5FeS4,purple-bronze,3,metallic,grayish-black,none,uneven,5.1,cubic,hydrothermal,"Cu,Fe,S",90,A2,premium,copper production,Butte Montana USA,8200,moderate,high
+28,Bornite,ore,Cu5FeS4,iridescent,3,metallic,grayish,none,uneven,4.9,cubic,hydrothermal,"Cu,Fe,S",67,B1,medium,copper extraction,Cornwall UK,6800,moderate,high
+29,Chalcocite,ore,Cu2S,gray-black,2.5,metallic,gray-black,none,conchoidal,5.6,monoclinic,hydrothermal,"Cu,S",97,A1,premium,high-grade copper,Morenci USA,9500,easy,high
+30,Chalcocite,ore,Cu2S,dark-gray,2.5,metallic,gray,none,conchoidal,5.5,monoclinic,hydrothermal,"Cu,S",79,A3,high,copper production,Zambia,8000,easy,high
+31,Chalcocite,ore,Cu2S,gray,2.5,submetallic,gray,none,conchoidal,5.3,monoclinic,hydrothermal,"Cu,S",55,B2,medium,copper extraction,Rio Tinto Spain,5000,moderate,high
+32,Covellite,ore,CuS,indigo-blue,1.5,metallic,lead-gray,perfect,uneven,4.6,hexagonal,hydrothermal,"Cu,S",92,A2,premium,copper production,Butte USA,8700,moderate,high
+33,Covellite,ore,CuS,dark-blue,1.5,metallic,gray,perfect,uneven,4.4,hexagonal,hydrothermal,"Cu,S",68,B1,medium,copper processing,Sardinia Italy,6500,moderate,high
+34,Native Gold,ore,Au,yellow,2.5,metallic,yellow,none,hackly,19.3,cubic,hydrothermal,Au,99,A1,premium,"jewelry,electronics,currency",Witwatersrand South Africa,60000000,moderate,high
+35,Native Gold,ore,Au,pale-yellow,2.5,metallic,yellow,none,hackly,17.5,cubic,hydrothermal,Au,90,A2,premium,"jewelry,electronics",Klondike Canada,55000000,difficult,high
+36,Native Gold,ore,Au,yellow-alloy,2.5,metallic,yellow,none,hackly,15.2,cubic,hydrothermal,Au,72,B1,high,gold extraction,Nevada USA,45000000,difficult,high
+37,Native Gold,ore,Au,gold-alloy,2.5,metallic,yellow,none,hackly,12.0,cubic,hydrothermal,Au,48,B3,low,gold recovery,Papua New Guinea,30000000,very-difficult,high
+38,Calaverite,ore,AuTe2,silver-yellow,2.5,metallic,yellowish,none,uneven,9.2,monoclinic,hydrothermal,"Au,Te",85,A2,premium,"gold,tellurium production",Kalgoorlie Australia,50000000,difficult,high
+39,Calaverite,ore,AuTe2,bronze,2.5,metallic,yellow,none,uneven,8.8,monoclinic,hydrothermal,"Au,Te",65,B1,medium,gold extraction,Cripple Creek USA,38000000,difficult,high
+40,Sylvanite,ore,"(Ag,Au)Te2",silver,1.5,metallic,gray,none,perfect,8.0,monoclinic,hydrothermal,"Au,Ag,Te",88,A2,premium,"gold,silver,tellurium",Transylvania Romania,48000000,difficult,high
+41,Sylvanite,ore,"(Ag,Au)Te2",silver-gray,1.5,metallic,gray,none,perfect,7.6,monoclinic,hydrothermal,"Au,Ag,Te",64,B2,medium,gold extraction,Cripple Creek USA,35000000,very-difficult,high
+42,Petzite,ore,Ag3AuTe2,steel-gray,2.5,metallic,gray,none,uneven,9.1,cubic,hydrothermal,"Ag,Au,Te",91,A2,premium,"gold,silver production",Transylvania Romania,52000000,difficult,high
+43,Petzite,ore,Ag3AuTe2,gray,2.5,metallic,gray,none,uneven,8.7,cubic,hydrothermal,"Ag,Au,Te",66,B1,medium,"gold,silver extraction",Colorado USA,40000000,very-difficult,high
+44,Argentite,ore,Ag2S,lead-gray,2.5,metallic,lead-gray,none,uneven,7.2,cubic,hydrothermal,"Ag,S",97,A1,premium,"silver production,photography",Zacatecas Mexico,28000,easy,high
+45,Argentite,ore,Ag2S,dark-gray,2.5,metallic,gray,none,uneven,7.0,cubic,hydrothermal,"Ag,S",82,A3,high,silver extraction,Potosi Bolivia,22000,moderate,high
+46,Argentite,ore,Ag2S,gray,2.5,metallic,gray,none,uneven,6.8,cubic,hydrothermal,"Ag,S",58,B2,medium,silver processing,Nevada USA,15000,moderate,high
+47,Native Silver,ore,Ag,silver-white,2.5,metallic,silver-white,none,hackly,10.5,cubic,hydrothermal,Ag,99,A1,premium,"jewelry,electronics,currency",Cobalt Ontario Canada,35000,easy,moderate
+48,Native Silver,ore,Ag,gray-white,2.5,metallic,silver,none,hackly,10.0,cubic,hydrothermal,Ag,88,A2,premium,"jewelry,electronics",Kongsberg Norway,30000,moderate,moderate
+49,Pyrargyrite,ore,Ag3SbS3,dark-red,2.5,adamantine,purplish-red,none,conchoidal,5.8,trigonal,hydrothermal,"Ag,Sb,S",86,A2,premium,"silver,antimony",Freiberg Germany,25000,difficult,high
+50,Pyrargyrite,ore,Ag3SbS3,red-gray,2.5,adamantine,red,none,conchoidal,5.6,trigonal,hydrothermal,"Ag,Sb,S",62,B2,medium,silver extraction,Atacama Chile,18000,difficult,high
+51,Bauxite,ore,Al(OH)3,red-brown,1.5,dull,white,none,uneven,2.6,amorphous,sedimentary,"Al,O,H",95,A1,premium,aluminum production,Weipa Australia,65,easy,high
+52,Bauxite,ore,Al(OH)3,yellow,1.5,dull,white,none,uneven,2.5,amorphous,sedimentary,"Al,O,H",80,A3,high,aluminum production,Guinea West Africa,55,easy,high
+53,Bauxite,ore,Al(OH)3,gray-brown,1.5,dull,white,none,uneven,2.4,amorphous,sedimentary,"Al,O,H",60,B2,medium,aluminum processing,Jamaica,42,moderate,high
+54,Bauxite,ore,Al(OH)3,pale-yellow,1.5,dull,white,none,uneven,2.3,amorphous,sedimentary,"Al,O,H",40,C1,low,low-grade aluminum,Suriname,28,moderate,high
+55,Gibbsite,ore,Al(OH)3,white,2.5,vitreous,white,perfect,uneven,2.4,monoclinic,sedimentary,"Al,O,H",92,A2,premium,"aluminum oxide,refractories",Weipa Australia,70,moderate,moderate
+56,Gibbsite,ore,Al(OH)3,gray,2.5,vitreous,white,perfect,uneven,2.3,monoclinic,sedimentary,"Al,O,H",68,B1,medium,aluminum production,Jamaica,52,moderate,moderate
+57,Boehmite,ore,AlO(OH),white,3.5,vitreous,white,perfect,conchoidal,3.0,orthorhombic,sedimentary,"Al,O,H",88,A2,premium,"aluminum oxide,abrasives",Guinea,75,moderate,moderate
+58,Boehmite,ore,AlO(OH),pale-gray,3.5,vitreous,white,perfect,conchoidal,2.9,orthorhombic,sedimentary,"Al,O,H",65,B1,medium,aluminum extraction,Hungary,58,moderate,moderate
+59,Diaspore,ore,AlO(OH),white,6.5,vitreous,white,perfect,conchoidal,3.4,orthorhombic,metamorphic,"Al,O,H",90,A2,premium,"refractory material,abrasives",Turkey,85,moderate,low
+60,Diaspore,ore,AlO(OH),gray,6.5,vitreous,white,perfect,conchoidal,3.3,orthorhombic,metamorphic,"Al,O,H",70,B1,high,abrasive applications,China,65,moderate,low
+61,Galena,ore,PbS,lead-gray,2.5,metallic,lead-gray,perfect,uneven,7.6,cubic,hydrothermal,"Pb,S",98,A1,premium,"lead production,silver byproduct",Broken Hill Australia,2200,easy,high
+62,Galena,ore,PbS,silver-gray,2.5,metallic,gray,perfect,uneven,7.5,cubic,hydrothermal,"Pb,S",85,A2,premium,"lead,silver production",Joplin Missouri USA,1900,easy,high
+63,Galena,ore,PbS,gray,2.5,metallic,gray,perfect,uneven,7.2,cubic,hydrothermal,"Pb,S",65,B1,medium,lead extraction,Coeur d Alene USA,1500,moderate,high
+64,Galena,ore,PbS,dark-gray,2.5,metallic,gray,perfect,uneven,6.9,cubic,hydrothermal,"Pb,S",45,B3,low,lead processing,Sardinia Italy,1000,moderate,high
+65,Sphalerite,ore,ZnS,yellow-brown,3.5,resinous,white,perfect,conchoidal,4.0,cubic,hydrothermal,"Zn,S",96,A1,premium,"zinc production,electronics",Tara Ireland,3500,moderate,high
+66,Sphalerite,ore,ZnS,brown,3.5,resinous,pale-yellow,perfect,conchoidal,3.9,cubic,hydrothermal,"Zn,S",80,A3,high,zinc production,Red Dog Alaska,3000,moderate,high
+67,Sphalerite,ore,ZnS,black,3.5,submetallic,brown,perfect,conchoidal,3.7,cubic,hydrothermal,"Zn,S",62,B2,medium,zinc extraction,Tri-State USA,2200,moderate,high
+68,Anglesite,ore,PbSO4,white,2.75,adamantine,white,perfect,conchoidal,6.3,orthorhombic,sedimentary,"Pb,S,O",82,A3,high,lead production,Tsumeb Namibia,1800,moderate,moderate
+69,Anglesite,ore,PbSO4,gray,2.75,vitreous,white,perfect,conchoidal,6.1,orthorhombic,sedimentary,"Pb,S,O",58,B2,medium,lead extraction,Broken Hill Australia,1200,difficult,moderate
+70,Cerussite,ore,PbCO3,white,3,adamantine,white,perfect,conchoidal,6.6,orthorhombic,sedimentary,"Pb,C,O",88,A2,premium,lead production,Broken Hill Australia,2000,moderate,moderate
+71,Cerussite,ore,PbCO3,gray-white,3,adamantine,white,perfect,conchoidal,6.4,orthorhombic,sedimentary,"Pb,C,O",64,B2,medium,lead extraction,Tsumeb Namibia,1400,difficult,moderate
+72,Pentlandite,ore,"(Fe,Ni)9S8",bronze-yellow,3.5,metallic,bronze,perfect,conchoidal,4.8,cubic,igneous,"Ni,Fe,S",95,A1,premium,nickel production,Sudbury Canada,15000,moderate,high
+73,Pentlandite,ore,"(Fe,Ni)9S8",yellow,3.5,metallic,bronze,perfect,conchoidal,4.6,cubic,igneous,"Ni,Fe,S",75,A3,high,nickel extraction,Norilsk Russia,12000,moderate,high
+74,Pentlandite,ore,"(Fe,Ni)9S8",bronze,3.5,metallic,bronze,perfect,conchoidal,4.4,cubic,igneous,"Ni,Fe,S",55,B2,medium,nickel processing,Kambalda Australia,8500,difficult,high
+75,Millerite,ore,NiS,brass-yellow,3,metallic,greenish-black,perfect,uneven,5.3,trigonal,hydrothermal,"Ni,S",90,A2,premium,"nickel,sulfuric acid",Thompson Canada,14000,difficult,high
+76,Millerite,ore,NiS,yellow-green,3,metallic,green,perfect,uneven,5.1,trigonal,hydrothermal,"Ni,S",65,B1,medium,nickel extraction,Wales UK,10000,difficult,high
+77,Garnierite,ore,"(Ni,Mg)3Si2O5(OH)4",green,2,waxy,pale-green,none,uneven,2.6,amorphous,sedimentary,"Ni,Mg,Si,O",78,A3,high,nickel production,New Caledonia,13000,moderate,moderate
+78,Garnierite,ore,"(Ni,Mg)3Si2O5(OH)4",pale-green,2,waxy,green,none,uneven,2.4,amorphous,sedimentary,"Ni,Mg,Si,O",55,B2,medium,nickel extraction,Philippines,9000,moderate,moderate
+79,Chromite,ore,FeCr2O4,black,5.5,metallic,dark-brown,none,uneven,4.6,cubic,igneous,"Fe,Cr,O",97,A1,premium,"ferrochrome,stainless steel",Bushveld South Africa,350,easy,moderate
+80,Chromite,ore,FeCr2O4,dark-brown,5.5,submetallic,brown,none,uneven,4.4,cubic,igneous,"Fe,Cr,O",78,A3,high,chromium production,Kazakhstan,280,moderate,moderate
+81,Chromite,ore,FeCr2O4,brown,5.5,dull,brown,none,uneven,4.2,cubic,igneous,"Fe,Cr,O",58,B2,medium,chrome processing,Turkey,200,moderate,moderate
+82,Pyrolusite,ore,MnO2,steel-gray,6,metallic,black,none,uneven,5.1,tetragonal,sedimentary,"Mn,O",95,A1,premium,"steel,batteries,dry cells",Kalahari South Africa,380,easy,moderate
+83,Pyrolusite,ore,MnO2,black,6,dull,black,none,uneven,4.9,tetragonal,sedimentary,"Mn,O",72,B1,high,manganese production,Groote Eylandt Australia,290,easy,moderate
+84,Pyrolusite,ore,MnO2,dark-gray,6,dull,black,none,uneven,4.6,tetragonal,sedimentary,"Mn,O",50,B3,low,manganese extraction,Brazil,200,moderate,moderate
+85,Psilomelane,ore,BaMn9O18(OH),black,5.5,submetallic,brownish-black,none,uneven,4.7,monoclinic,sedimentary,"Mn,Ba,O",85,A2,premium,manganese production,Nikopol Ukraine,320,moderate,moderate
+86,Psilomelane,ore,BaMn9O18(OH),dark-brown,5.5,dull,black,none,uneven,4.4,monoclinic,sedimentary,"Mn,Ba,O",62,B2,medium,manganese extraction,Gabon,220,moderate,moderate
+87,Rhodochrosite (ore),ore,MnCO3,rose-red,3.5,vitreous,white,perfect,uneven,3.7,trigonal,hydrothermal,"Mn,C,O",88,A2,premium,"manganese,ornamental",Capillitas Argentina,400,moderate,low
+88,Rhodochrosite (ore),ore,MnCO3,pink,3.5,vitreous,white,perfect,uneven,3.5,trigonal,hydrothermal,"Mn,C,O",65,B1,medium,manganese extraction,Colorado USA,280,moderate,low
+89,Cassiterite,ore,SnO2,brown-black,6.5,adamantine,white,none,uneven,7.0,tetragonal,hydrothermal,"Sn,O",98,A1,premium,"tin production,solder,alloys",Bangka Indonesia,18000,moderate,high
+90,Cassiterite,ore,SnO2,brown,6.5,adamantine,white,none,uneven,6.8,tetragonal,hydrothermal,"Sn,O",85,A2,premium,tin production,Cornwall UK,15000,moderate,high
+91,Cassiterite,ore,SnO2,gray-brown,6.5,submetallic,white,none,uneven,6.5,tetragonal,hydrothermal,"Sn,O",65,B1,medium,tin extraction,Yunnan China,11000,difficult,high
+92,Uraninite,ore,UO2,black,5,submetallic,black,none,uneven,10.9,cubic,hydrothermal,"U,O",92,A2,premium,"nuclear fuel,uranium production",Athabasca Canada,120000,difficult,high
+93,Uraninite,ore,UO2,dark-gray,5,dull,black,none,uneven,10.5,cubic,hydrothermal,"U,O",72,B1,high,uranium extraction,Rossing Namibia,95000,very-difficult,high
+94,Carnotite,ore,K2(UO2)2(VO4)2,yellow,1.5,dull,yellow,perfect,uneven,4.5,monoclinic,sedimentary,"K,U,V,O",78,A3,high,"uranium,vanadium production",Colorado Plateau USA,100000,difficult,high
+95,Carnotite,ore,K2(UO2)2(VO4)2,pale-yellow,1.5,dull,yellow,perfect,uneven,4.2,monoclinic,sedimentary,"K,U,V,O",55,B2,medium,uranium extraction,Kazakhstan,75000,very-difficult,high
+96,Quartz,mineral,SiO2,colorless,7,vitreous,white,none,conchoidal,2.65,trigonal,igneous,"Si,O",99,A1,premium,"glass,electronics,optics",Brazil,150,easy,low
+97,Quartz,mineral,SiO2,white,7,vitreous,white,none,conchoidal,2.65,trigonal,igneous,"Si,O",90,A2,premium,glass manufacturing,Arkansas USA,100,easy,low
+98,Quartz,mineral,SiO2,smoky,7,vitreous,white,none,conchoidal,2.64,trigonal,igneous,"Si,O",75,A3,high,"gemstone,decorative",Madagascar,200,moderate,low
+99,Quartz,mineral,SiO2,gray,7,vitreous,white,none,conchoidal,2.62,trigonal,igneous,"Si,O",55,B2,medium,industrial filler,Germany,60,easy,low
+100,Feldspar,mineral,KAlSi3O8,pink,6,vitreous,white,perfect,uneven,2.56,monoclinic,igneous,"K,Al,Si,O",88,A2,premium,"ceramics,glass,porcelain",Ontario Canada,120,easy,low
+101,Feldspar,mineral,KAlSi3O8,white,6,vitreous,white,perfect,uneven,2.56,monoclinic,igneous,"K,Al,Si,O",72,B1,high,ceramics manufacturing,Norway,90,easy,low
+102,Plagioclase,mineral,NaAlSi3O8,white,6,vitreous,white,perfect,uneven,2.62,triclinic,igneous,"Na,Al,Si,O",65,B1,medium,glass filler,Italy,80,easy,low
+103,Muscovite Mica,mineral,KAl2(AlSi3O10)(OH)2,colorless,2.5,pearly,white,perfect,uneven,2.8,monoclinic,metamorphic,"K,Al,Si,O",92,A2,premium,"insulation,electronics,cosmetics",Rajasthan India,500,moderate,low
+104,Muscovite Mica,mineral,KAl2(AlSi3O10)(OH)2,silver,2.5,pearly,white,perfect,uneven,2.8,monoclinic,metamorphic,"K,Al,Si,O",75,A3,high,electrical insulation,Minas Gerais Brazil,380,moderate,low
+105,Biotite Mica,mineral,"K(Mg,Fe)3AlSi3O10(OH)2",black,2.5,pearly,white,perfect,uneven,3.0,monoclinic,igneous,"K,Mg,Fe,Al,Si,O",65,B1,medium,"ceramics,filler",Ontario Canada,200,moderate,low
+106,Olivine,mineral,"(Mg,Fe)2SiO4",olive-green,6.5,vitreous,white,none,conchoidal,3.4,orthorhombic,igneous,"Mg,Fe,Si,O",82,A3,high,"refractories,abrasives,jewelry",Norway,180,moderate,low
+107,Olivine,mineral,"(Mg,Fe)2SiO4",yellow-green,6.5,vitreous,white,none,conchoidal,3.3,orthorhombic,igneous,"Mg,Fe,Si,O",62,B2,medium,refractory sand,Arizona USA,120,moderate,low
+108,Pyroxene,mineral,"Ca(Mg,Fe)Si2O6",black,5.5,vitreous,grayish-green,poor,uneven,3.4,monoclinic,igneous,"Ca,Mg,Fe,Si,O",78,A3,high,rock-forming mineral,Scotland UK,80,moderate,low
+109,Pyroxene,mineral,"Ca(Mg,Fe)Si2O6",dark-green,5.5,vitreous,gray,poor,uneven,3.3,monoclinic,igneous,"Ca,Mg,Fe,Si,O",58,B2,medium,industrial filler,Iceland,55,moderate,low
+110,Hornblende,mineral,"Ca2(Mg,Fe,Al)5Si6Al2O22(OH)2",black,5.5,vitreous,gray-green,perfect,uneven,3.2,monoclinic,metamorphic,"Ca,Mg,Fe,Al,Si,O",72,B1,high,rock-forming mineral,Canada,70,moderate,low
+111,Garnet,mineral,Fe3Al2Si3O12,deep-red,7.5,vitreous,white,none,conchoidal,4.3,cubic,metamorphic,"Fe,Al,Si,O",95,A1,premium,"abrasive,gemstone,water filtration",India,800,moderate,low
+112,Garnet,mineral,Fe3Al2Si3O12,red,7.5,vitreous,white,none,conchoidal,4.2,cubic,metamorphic,"Fe,Al,Si,O",78,A3,high,abrasive applications,Australia,550,moderate,low
+113,Garnet,mineral,Fe3Al2Si3O12,pale-red,7.5,vitreous,white,none,conchoidal,4.0,cubic,metamorphic,"Fe,Al,Si,O",56,B2,medium,industrial abrasive,Idaho USA,350,moderate,low
+114,Tourmaline,mineral,"Na(Li,Al)3Al6(BO3)3Si6O18(OH)4",pink-green,7.5,vitreous,white,none,uneven,3.1,trigonal,hydrothermal,"Na,Li,Al,B,Si,O",90,A2,premium,"jewelry,electronics,gemstone",Minas Gerais Brazil,5000,moderate,low
+115,Tourmaline,mineral,"Na(Li,Al)3Al6(BO3)3Si6O18(OH)4",blue,7.5,vitreous,white,none,uneven,3.0,trigonal,hydrothermal,"Na,Li,Al,B,Si,O",70,B1,high,"decorative,gemstone",Sri Lanka,3000,difficult,low
+116,Topaz,mineral,"Al2SiO4(F,OH)2",colorless,8,vitreous,white,perfect,uneven,3.5,orthorhombic,hydrothermal,"Al,Si,F,O",96,A1,premium,"gemstone,abrasive",Ouro Preto Brazil,12000,difficult,low
+117,Topaz,mineral,"Al2SiO4(F,OH)2",blue,8,vitreous,white,perfect,uneven,3.5,orthorhombic,hydrothermal,"Al,Si,F,O",78,A3,high,"gemstone,jewelry",Ukraine,8000,difficult,low
+118,Zircon,mineral,ZrSiO4,brown,7.5,adamantine,white,none,conchoidal,4.7,tetragonal,igneous,"Zr,Si,O",92,A2,premium,"zirconium,nuclear material,gemstone",Western Australia,2500,moderate,low
+119,Zircon,mineral,ZrSiO4,colorless,7.5,adamantine,white,none,conchoidal,4.7,tetragonal,igneous,"Zr,Si,O",72,B1,high,zirconium production,Sri Lanka,1800,moderate,low
+120,Calcite,mineral,CaCO3,white,3,vitreous,white,perfect,conchoidal,2.71,trigonal,sedimentary,"Ca,C,O",98,A1,premium,"cement,lime,antacid",Derbyshire UK,80,easy,low
+121,Calcite,mineral,CaCO3,colorless,3,vitreous,white,perfect,conchoidal,2.71,trigonal,sedimentary,"Ca,C,O",82,A3,high,cement manufacturing,Mexico,60,easy,low
+122,Calcite,mineral,CaCO3,gray,3,vitreous,white,perfect,conchoidal,2.7,trigonal,sedimentary,"Ca,C,O",62,B2,medium,industrial filler,Germany,42,easy,low
+123,Dolomite,mineral,CaMg(CO3)2,white,3.5,vitreous,white,perfect,conchoidal,2.85,trigonal,sedimentary,"Ca,Mg,C,O",90,A2,premium,"cement,flux,dimension stone",Tyrol Austria,90,easy,low
+124,Dolomite,mineral,CaMg(CO3)2,gray,3.5,vitreous,white,perfect,conchoidal,2.84,trigonal,sedimentary,"Ca,Mg,C,O",70,B1,high,cement production,Michigan USA,65,easy,low
+125,Magnesite,mineral,MgCO3,white,3.5,vitreous,white,perfect,conchoidal,3.0,trigonal,metamorphic,"Mg,C,O",93,A2,premium,"refractories,magnesia",Styria Austria,250,moderate,low
+126,Magnesite,mineral,MgCO3,gray-white,3.5,vitreous,white,perfect,conchoidal,2.95,trigonal,metamorphic,"Mg,C,O",72,B1,high,refractory materials,Greece,180,moderate,low
+127,Rhodochrosite,mineral,MnCO3,rose-red,3.5,vitreous,white,perfect,uneven,3.6,trigonal,hydrothermal,"Mn,C,O",85,A2,premium,"ornamental,manganese ore",Colorado USA,600,moderate,low
+128,Rhodochrosite,mineral,MnCO3,pink,3.5,vitreous,white,perfect,uneven,3.5,trigonal,hydrothermal,"Mn,C,O",62,B2,medium,decorative stone,Argentina,380,moderate,low
+129,Gypsum,mineral,CaSO4·2H2O,white,2,vitreous,white,perfect,uneven,2.32,monoclinic,sedimentary,"Ca,S,O",96,A1,premium,"plaster,drywall,fertilizer",Nova Scotia Canada,35,easy,low
+130,Gypsum,mineral,CaSO4·2H2O,gray,2,vitreous,white,perfect,uneven,2.3,monoclinic,sedimentary,"Ca,S,O",78,A3,high,construction materials,New Mexico USA,25,easy,low
+131,Gypsum,mineral,CaSO4·2H2O,pink,2,pearly,white,perfect,uneven,2.29,monoclinic,sedimentary,"Ca,S,O",60,B2,medium,industrial gypsum,Spain,18,easy,low
+132,Anhydrite,mineral,CaSO4,white,3.5,vitreous,white,perfect,uneven,2.9,orthorhombic,sedimentary,"Ca,S,O",92,A2,premium,"cement,fertilizer,sulfuric acid",Germany,45,easy,low
+133,Anhydrite,mineral,CaSO4,blue-gray,3.5,vitreous,white,perfect,uneven,2.88,orthorhombic,sedimentary,"Ca,S,O",70,B1,high,cement production,Kansas USA,32,easy,low
+134,Barite,mineral,BaSO4,white,3,vitreous,white,perfect,uneven,4.5,orthorhombic,hydrothermal,"Ba,S,O",97,A1,premium,"drilling mud,pigment,radiation shielding",Missouri USA,180,easy,low
+135,Barite,mineral,BaSO4,blue,3,vitreous,white,perfect,uneven,4.48,orthorhombic,hydrothermal,"Ba,S,O",80,A3,high,drilling applications,Nevada USA,140,easy,low
+136,Barite,mineral,BaSO4,brown,3,vitreous,white,perfect,uneven,4.4,orthorhombic,hydrothermal,"Ba,S,O",60,B2,medium,industrial filler,Germany,100,moderate,low
+137,Celestite,mineral,SrSO4,blue-white,3.5,vitreous,white,perfect,uneven,3.96,orthorhombic,sedimentary,"Sr,S,O",90,A2,premium,"strontium chemicals,fireworks",Sicily Italy,600,moderate,low
+138,Celestite,mineral,SrSO4,colorless,3.5,vitreous,white,perfect,uneven,3.95,orthorhombic,sedimentary,"Sr,S,O",68,B1,medium,strontium production,Ohio USA,450,moderate,low
+139,Apatite,mineral,"Ca5(PO4)3(F,Cl,OH)",green,5,vitreous,white,none,conchoidal,3.2,hexagonal,igneous,"Ca,P,O",88,A2,premium,"fertilizer,phosphoric acid",Kola Russia,120,easy,moderate
+140,Apatite,mineral,"Ca5(PO4)3(F,Cl,OH)",blue-green,5,vitreous,white,none,conchoidal,3.18,hexagonal,igneous,"Ca,P,O",68,B1,medium,phosphate fertilizer,Morocco,90,easy,moderate
+141,Apatite,mineral,"Ca5(PO4)3(F,Cl,OH)",yellow,5,vitreous,white,none,conchoidal,3.15,hexagonal,igneous,"Ca,P,O",50,B3,low,industrial phosphate,Florida USA,65,easy,moderate
+142,Turquoise,mineral,CuAl6(PO4)4(OH)8·4H2O,blue-green,5.5,waxy,white,none,conchoidal,2.76,triclinic,hydrothermal,"Cu,Al,P,O",85,A2,premium,"jewelry,ornamental",Nishapur Iran,15000,difficult,low
+143,Turquoise,mineral,CuAl6(PO4)4(OH)8·4H2O,pale-blue,5,waxy,white,none,conchoidal,2.68,triclinic,hydrothermal,"Cu,Al,P,O",62,B2,medium,decorative arts,Nevada USA,8000,difficult,low
+144,Lazulite,mineral,"(Mg,Fe)Al2(PO4)2(OH)2",blue,5.5,vitreous,white,none,uneven,3.1,monoclinic,metamorphic,"Mg,Fe,Al,P,O",78,A3,high,"collector mineral,gemstone",Werfen Austria,3000,difficult,low
+145,Fluorite,mineral,CaF2,purple,4,vitreous,white,perfect,conchoidal,3.18,cubic,hydrothermal,"Ca,F",95,A1,premium,"flux,HF acid,optics",Derbyshire UK,450,easy,low
+146,Fluorite,mineral,CaF2,green,4,vitreous,white,perfect,conchoidal,3.18,cubic,hydrothermal,"Ca,F",80,A3,high,"optical fluorite,flux",Illinois USA,350,easy,low
+147,Fluorite,mineral,CaF2,colorless,4,vitreous,white,perfect,conchoidal,3.17,cubic,hydrothermal,"Ca,F",62,B2,medium,industrial flux,China,250,easy,low
+148,Halite,mineral,NaCl,colorless,2.5,vitreous,white,perfect,conchoidal,2.16,cubic,sedimentary,"Na,Cl",99,A1,premium,"food,chemical feedstock,deicing",Cheshire UK,30,easy,low
+149,Halite,mineral,NaCl,white,2.5,vitreous,white,perfect,conchoidal,2.16,cubic,sedimentary,"Na,Cl",90,A2,premium,salt production,Detroit USA,22,easy,low
+150,Halite,mineral,NaCl,gray,2.5,vitreous,white,perfect,conchoidal,2.15,cubic,sedimentary,"Na,Cl",70,B1,high,industrial salt,Poland,15,easy,low
+151,Sylvite,mineral,KCl,colorless,2,vitreous,white,perfect,conchoidal,1.99,cubic,sedimentary,"K,Cl",97,A1,premium,"potash fertilizer,chemical feedstock",Saskatchewan Canada,400,easy,low
+152,Sylvite,mineral,KCl,red,2,vitreous,white,perfect,conchoidal,1.99,cubic,sedimentary,"K,Cl",80,A3,high,potash production,Germany,300,easy,low
+153,Corundum,mineral,Al2O3,gray,9,adamantine,white,none,conchoidal,4.02,trigonal,metamorphic,"Al,O",78,A3,high,"abrasive,grinding wheels",Zimbabwe,1200,moderate,low
+154,Corundum,mineral,Al2O3,brown,9,dull,white,none,conchoidal,3.98,trigonal,metamorphic,"Al,O",55,B2,medium,industrial abrasive,Turkey,800,moderate,low
+155,Spinel,mineral,MgAl2O4,red,8,vitreous,white,none,conchoidal,3.58,cubic,metamorphic,"Mg,Al,O",92,A2,premium,"gemstone,refractories",Sri Lanka,50000,difficult,low
+156,Spinel,mineral,MgAl2O4,blue,8,vitreous,white,none,conchoidal,3.56,cubic,metamorphic,"Mg,Al,O",72,B1,high,industrial refractory,Myanmar,35000,difficult,low
+157,Ilmenite,mineral,FeTiO3,black,5.5,metallic,black,none,conchoidal,4.7,trigonal,igneous,"Fe,Ti,O",88,A2,premium,"titanium dioxide,titanium metal",Western Australia,800,easy,moderate
+158,Ilmenite,mineral,FeTiO3,dark-gray,5.5,submetallic,black,none,conchoidal,4.5,trigonal,igneous,"Fe,Ti,O",65,B1,medium,titanium production,India,580,easy,moderate
+159,Rutile,mineral,TiO2,red-brown,6.5,adamantine,pale-brown,none,uneven,4.25,tetragonal,igneous,"Ti,O",97,A1,premium,"titanium,paint pigment",Queensland Australia,2500,moderate,low
+160,Rutile,mineral,TiO2,golden,6.5,adamantine,pale,none,uneven,4.23,tetragonal,igneous,"Ti,O",80,A3,high,titanium dioxide,Sierra Leone,1800,moderate,low
+161,Anatase,mineral,TiO2,brown,5.5,adamantine,white,none,conchoidal,3.9,tetragonal,hydrothermal,"Ti,O",85,A2,premium,"titanium,photocatalysis",Norway,2200,difficult,low
+162,Anatase,mineral,TiO2,blue,5.5,adamantine,white,none,conchoidal,3.88,tetragonal,hydrothermal,"Ti,O",65,B1,medium,photocatalyst,Brazil,1500,difficult,low
+163,Diamond,mineral,C,colorless,10,adamantine,white,octahedral,conchoidal,3.52,cubic,igneous,C,99,A1,premium,"gemstone,cutting tools,electronics",Kimberley South Africa,5000000000,very-difficult,high
+164,Diamond,mineral,C,yellow,10,adamantine,white,octahedral,conchoidal,3.52,cubic,igneous,C,90,A2,premium,"industrial diamond,gemstone",Botswana,3000000000,very-difficult,high
+165,Diamond,mineral,C,brown,10,adamantine,white,octahedral,conchoidal,3.51,cubic,igneous,C,70,B1,high,industrial cutting,Siberia Russia,2000000000,very-difficult,high
+166,Sulfur,mineral,S,yellow,2,resinous,yellow,none,conchoidal,2.07,orthorhombic,sedimentary,S,99,A1,premium,"sulfuric acid,fertilizer,gunpowder",Sicily Italy,180,easy,moderate
+167,Sulfur,mineral,S,pale-yellow,2,resinous,yellow,none,conchoidal,2.06,orthorhombic,sedimentary,S,85,A2,premium,chemical industry,Louisiana USA,140,easy,moderate
+168,Graphite,mineral,C,gray-black,1.5,metallic,black,perfect,uneven,2.23,hexagonal,metamorphic,C,96,A1,premium,"batteries,lubricant,electrodes",Heilongjiang China,1200,moderate,moderate
+169,Graphite,mineral,C,dark-gray,1.5,metallic,black,perfect,uneven,2.2,hexagonal,metamorphic,C,75,A3,high,industrial graphite,Sri Lanka,800,moderate,moderate
+170,Graphite,mineral,C,black,1.5,metallic,black,perfect,uneven,2.18,hexagonal,metamorphic,C,55,B2,medium,graphite production,Madagascar,550,moderate,moderate
+171,Native Copper,mineral,Cu,copper-red,2.5,metallic,copper-red,none,hackly,8.9,cubic,hydrothermal,Cu,99,A1,premium,"electrical wire,plumbing,coinage",Keweenaw USA,8500,moderate,moderate
+172,Native Copper,mineral,Cu,dark-red,2.5,metallic,copper,none,hackly,8.7,cubic,hydrothermal,Cu,82,A3,high,copper production,Arizona USA,7200,moderate,moderate
+173,Granite,rock,SiO2+Al2O3+K2O,gray-pink,6.5,vitreous,white,none,uneven,2.7,none,igneous,"Si,Al,K,Na,O",90,A2,premium,"dimension stone,countertop,monuments",Aberdeen Scotland,350,easy,low
+174,Granite,rock,SiO2+Al2O3+K2O,pink,6.5,vitreous,white,none,uneven,2.65,none,igneous,"Si,Al,K,Na,O",72,B1,high,"construction,paving",Minas Gerais Brazil,250,easy,low
+175,Granite,rock,SiO2+Al2O3+K2O,gray,6.5,vitreous,white,none,uneven,2.62,none,igneous,"Si,Al,K,Na,O",55,B2,medium,"aggregate,fill",Norway,150,easy,low
+176,Basalt,rock,SiO2+MgO+CaO,black,6,vitreous,white,none,uneven,3.0,none,igneous,"Si,Mg,Ca,Fe,O",88,A2,premium,"construction aggregate,basalt fiber",Iceland,180,easy,low
+177,Basalt,rock,SiO2+MgO+CaO,dark-gray,6,vitreous,gray,none,uneven,2.95,none,igneous,"Si,Mg,Ca,Fe,O",68,B1,medium,road construction,Hawaii USA,130,easy,low
+178,Basalt,rock,SiO2+MgO+CaO,gray-black,6,dull,gray,none,uneven,2.9,none,igneous,"Si,Mg,Ca,Fe,O",48,B3,low,fill material,India,80,easy,low
+179,Obsidian,rock,SiO2,black,5.5,vitreous,white,none,conchoidal,2.35,none,igneous,"Si,O",92,A2,premium,"ornamental,surgical scalpels",Oregon USA,500,moderate,low
+180,Obsidian,rock,SiO2,dark-brown,5.5,vitreous,white,none,conchoidal,2.33,none,igneous,"Si,O",72,B1,high,decorative,Mexico,320,moderate,low
+181,Pumice,rock,SiO2,white,6,dull,white,none,uneven,0.9,none,igneous,"Si,Al,O",82,A3,high,"abrasive,lightweight aggregate",Lipari Italy,120,easy,low
+182,Pumice,rock,SiO2,gray,6,dull,white,none,uneven,0.88,none,igneous,"Si,Al,O",62,B2,medium,concrete filler,Iceland,80,easy,low
+183,Rhyolite,rock,SiO2,pink-gray,6,vitreous,white,none,conchoidal,2.55,none,igneous,"Si,Al,K,O",80,A3,high,"dimension stone,aggregate",Nevada USA,200,moderate,low
+184,Rhyolite,rock,SiO2,gray,6,vitreous,gray,none,conchoidal,2.5,none,igneous,"Si,Al,K,O",60,B2,medium,construction aggregate,Yellowstone USA,140,moderate,low
+185,Andesite,rock,SiO2+Al2O3,gray,6,vitreous,gray,none,uneven,2.7,none,igneous,"Si,Al,Ca,Na,O",78,A3,high,"dimension stone,road construction",Andes Peru,190,moderate,low
+186,Andesite,rock,SiO2+Al2O3,dark-gray,6,dull,gray,none,uneven,2.65,none,igneous,"Si,Al,Ca,Na,O",58,B2,medium,aggregate,Japan,130,moderate,low
+187,Diorite,rock,SiO2+Al2O3,gray-black,6,vitreous,gray,none,uneven,2.8,none,igneous,"Si,Al,Ca,Na,Fe,O",82,A3,high,"dimension stone,aggregate",Scotland UK,250,moderate,low
+188,Diorite,rock,SiO2+Al2O3,dark-gray,6,dull,gray,none,uneven,2.78,none,igneous,"Si,Al,Ca,Na,Fe,O",62,B2,medium,construction,Italy,170,moderate,low
+189,Gabbro,rock,SiO2+MgO,black,6,vitreous,gray,none,uneven,3.0,none,igneous,"Si,Mg,Ca,Fe,O",85,A2,premium,"dimension stone,crushed stone",Norway,280,easy,low
+190,Gabbro,rock,SiO2+MgO,dark-green,6,vitreous,gray,none,uneven,2.98,none,igneous,"Si,Mg,Ca,Fe,O",65,B1,medium,road base,South Africa,190,easy,low
+191,Peridotite,rock,MgO+SiO2,olive-green,6.5,vitreous,white,none,uneven,3.3,none,igneous,"Mg,Fe,Si,O",88,A2,premium,"olivine source,gems",Horoman Japan,350,difficult,low
+192,Peridotite,rock,MgO+SiO2,green-brown,6.5,vitreous,white,none,uneven,3.25,none,igneous,"Mg,Fe,Si,O",65,B1,medium,refractory aggregate,Arizona USA,240,difficult,low
+193,Tuff,rock,SiO2,white,2.5,dull,white,none,uneven,1.2,none,igneous,"Si,Al,O",70,B1,high,lightweight building stone,Cappadocia Turkey,150,easy,low
+194,Tuff,rock,SiO2,gray,2.5,dull,gray,none,uneven,1.15,none,igneous,"Si,Al,O",50,B3,low,construction filler,Italy,90,easy,low
+195,Sandstone,rock,SiO2,tan,6,dull,white,none,uneven,2.3,none,sedimentary,"Si,O",85,A2,premium,"building stone,glass sand,oil reservoir",Colorado USA,120,easy,low
+196,Sandstone,rock,SiO2,red-brown,6,dull,white,none,uneven,2.25,none,sedimentary,"Si,O",68,B1,medium,construction stone,Sydney Australia,80,easy,low
+197,Sandstone,rock,SiO2,gray,6,dull,gray,none,uneven,2.2,none,sedimentary,"Si,O",50,B3,low,aggregate,Scotland UK,55,easy,low
+198,Limestone,rock,CaCO3,white,3,dull,white,none,uneven,2.71,none,sedimentary,"Ca,C,O",92,A2,premium,"cement,lime,aggregate,flux",England UK,95,easy,low
+199,Limestone,rock,CaCO3,gray,3,dull,white,none,uneven,2.7,none,sedimentary,"Ca,C,O",75,A3,high,cement production,Texas USA,70,easy,low
+200,Limestone,rock,CaCO3,brown,3,dull,gray,none,uneven,2.68,none,sedimentary,"Ca,C,O",55,B2,medium,agricultural lime,Italy,48,easy,low
+201,Shale,rock,SiO2+Al2O3,gray,2,dull,gray,none,uneven,2.4,none,sedimentary,"Si,Al,K,O",72,B1,high,"oil shale,brick,pottery",Pennsylvania USA,60,moderate,moderate
+202,Shale,rock,SiO2+Al2O3,black,2,dull,gray,none,uneven,2.35,none,sedimentary,"Si,Al,K,O",52,B3,low,ceramic raw material,Yorkshire UK,40,moderate,moderate
+203,Mudstone,rock,SiO2+Al2O3,gray,2.5,dull,gray,none,uneven,2.35,none,sedimentary,"Si,Al,O",65,B1,medium,"brick,cement",Kansas USA,45,easy,low
+204,Mudstone,rock,SiO2+Al2O3,brown,2.5,dull,gray,none,uneven,2.3,none,sedimentary,"Si,Al,O",45,B3,low,fill material,Mississippi USA,28,easy,low
+205,Conglomerate,rock,SiO2,multicolor,6,dull,white,none,uneven,2.4,none,sedimentary,"Si,O",75,A3,high,"aggregate,fill",California USA,80,easy,low
+206,Conglomerate,rock,SiO2,gray-brown,6,dull,gray,none,uneven,2.35,none,sedimentary,"Si,O",55,B2,medium,construction fill,Australia,55,easy,low
+207,Chalk,rock,CaCO3,white,1.5,dull,white,none,uneven,1.8,none,sedimentary,"Ca,C,O",95,A1,premium,"cement,writing chalk,filler",Sussex England,65,easy,low
+208,Chalk,rock,CaCO3,off-white,1.5,dull,white,none,uneven,1.75,none,sedimentary,"Ca,C,O",78,A3,high,agricultural lime,France,42,easy,low
+209,Coal Anthracite,rock,C,black,2.5,vitreous,black,none,conchoidal,1.7,none,sedimentary,"C,H,O",96,A1,premium,"high-grade fuel,metallurgy",Pennsylvania USA,220,easy,high
+210,Coal Bituminous,rock,C,black,2,resinous,black,none,uneven,1.35,none,sedimentary,"C,H,O",78,A3,high,"electricity generation,coking coal",West Virginia USA,120,easy,high
+211,Coal Lignite,rock,C,brown-black,1.5,dull,brown,none,uneven,1.1,none,sedimentary,"C,H,O",52,B3,low,electricity generation,Germany,55,easy,high
+212,Rock Salt,rock,NaCl,colorless,2.5,vitreous,white,perfect,conchoidal,2.16,none,sedimentary,"Na,Cl",98,A1,premium,"road salt,chemical feedstock",Wieliczka Poland,30,easy,low
+213,Rock Salt,rock,NaCl,white,2.5,vitreous,white,perfect,conchoidal,2.15,none,sedimentary,"Na,Cl",85,A2,premium,industrial salt,Kansas USA,22,easy,low
+214,Chert,rock,SiO2,gray,7,dull,white,none,conchoidal,2.6,none,sedimentary,"Si,O",95,A1,premium,"flint tools,aggregate",England UK,100,moderate,low
+215,Chert,rock,SiO2,brown,7,dull,white,none,conchoidal,2.58,none,sedimentary,"Si,O",75,A3,high,aggregate,Texas USA,70,moderate,low
+216,Marble,rock,CaCO3,white,3,vitreous,white,none,uneven,2.72,none,metamorphic,"Ca,C,O",96,A1,premium,"dimension stone,sculpture,tile",Carrara Italy,800,moderate,low
+217,Marble,rock,CaCO3,gray,3,vitreous,white,none,uneven,2.71,none,metamorphic,"Ca,C,O",78,A3,high,"flooring,countertop",Vermont USA,550,moderate,low
+218,Marble,rock,CaCO3,pink,3,vitreous,white,none,uneven,2.7,none,metamorphic,"Ca,C,O",58,B2,medium,decorative,Greece,380,moderate,low
+219,Slate,rock,SiO2+Al2O3,gray-black,3.5,dull,gray,perfect,uneven,2.7,none,metamorphic,"Si,Al,O",90,A2,premium,"roofing,flooring,blackboard",Wales UK,400,moderate,low
+220,Slate,rock,SiO2+Al2O3,dark-gray,3.5,dull,gray,perfect,uneven,2.68,none,metamorphic,"Si,Al,O",70,B1,high,roofing tiles,Vermont USA,280,moderate,low
+221,Slate,rock,SiO2+Al2O3,green-gray,3.5,dull,gray,perfect,uneven,2.65,none,metamorphic,"Si,Al,O",52,B3,low,aggregate,Spain,180,moderate,low
+222,Quartzite,rock,SiO2,white,7,vitreous,white,none,conchoidal,2.65,none,metamorphic,"Si,O",97,A1,premium,"dimension stone,aggregate,silica",South Africa,180,easy,low
+223,Quartzite,rock,SiO2,gray,7,vitreous,white,none,conchoidal,2.63,none,metamorphic,"Si,O",80,A3,high,construction aggregate,Idaho USA,120,easy,low
+224,Quartzite,rock,SiO2,pink,7,vitreous,white,none,conchoidal,2.62,none,metamorphic,"Si,O",60,B2,medium,dimension stone,Norway,85,easy,low
+225,Schist,rock,SiO2+Al2O3,silver-gray,4,pearly,gray,perfect,uneven,2.7,none,metamorphic,"Si,Al,Mg,O",82,A3,high,"roofing,flagstone",Scotland UK,220,moderate,low
+226,Schist,rock,SiO2+Al2O3,green,4,pearly,gray,perfect,uneven,2.68,none,metamorphic,"Si,Al,Mg,O",62,B2,medium,construction,Vermont USA,150,moderate,low
+227,Gneiss,rock,SiO2+Al2O3,gray-pink,6,vitreous,gray,none,uneven,2.75,none,metamorphic,"Si,Al,K,Na,O",88,A2,premium,"dimension stone,countertop",Norway,300,easy,low
+228,Gneiss,rock,SiO2+Al2O3,gray,6,vitreous,gray,none,uneven,2.72,none,metamorphic,"Si,Al,K,Na,O",68,B1,medium,construction,Finland,200,easy,low
+229,Hornfels,rock,SiO2+Al2O3,dark-gray,6.5,dull,gray,none,uneven,2.8,none,metamorphic,"Si,Al,Fe,O",78,A3,high,"aggregate,ballast",Cornwall UK,200,difficult,low
+230,Hornfels,rock,SiO2+Al2O3,black,6.5,dull,gray,none,uneven,2.78,none,metamorphic,"Si,Al,Fe,O",58,B2,medium,construction fill,Germany,140,difficult,low
+231,Phyllite,rock,SiO2+Al2O3,gray-green,3.5,silky,gray,perfect,uneven,2.72,none,metamorphic,"Si,Al,O",72,B1,high,"roofing,flooring",Vermont USA,250,moderate,low
+232,Phyllite,rock,SiO2+Al2O3,silver-gray,3.5,silky,gray,perfect,uneven,2.7,none,metamorphic,"Si,Al,O",52,B3,low,decorative flagstone,Wales UK,170,moderate,low
+233,Amphibolite,rock,SiO2+CaO,black-green,5.5,vitreous,gray,none,uneven,3.0,none,metamorphic,"Si,Ca,Mg,Fe,O",82,A3,high,"dimension stone,aggregate",Scandinavia,280,moderate,low
+234,Amphibolite,rock,SiO2+CaO,dark-green,5.5,vitreous,gray,none,uneven,2.98,none,metamorphic,"Si,Ca,Mg,Fe,O",62,B2,medium,construction aggregate,Scotland UK,190,moderate,low
+235,Eclogite,rock,SiO2+MgO,red-green,6.5,vitreous,gray,none,uneven,3.5,none,metamorphic,"Si,Mg,Al,Fe,O",85,A2,premium,"research specimen,gemstone",Norway,1200,very-difficult,low
+236,Eclogite,rock,SiO2+MgO,green,6.5,vitreous,gray,none,uneven,3.45,none,metamorphic,"Si,Mg,Al,Fe,O",65,B1,medium,scientific study,Alps Europe,800,very-difficult,low
+237,Ruby,stone,Al2O3,red,9,adamantine,white,none,conchoidal,4.0,trigonal,metamorphic,"Al,Cr,O",98,A1,premium,"jewelry,lasers,watches",Mogok Myanmar,1000000,very-difficult,low
+238,Ruby,stone,Al2O3,pink-red,9,adamantine,white,none,conchoidal,4.0,trigonal,metamorphic,"Al,Cr,O",85,A2,premium,fine jewelry,Vietnam,700000,very-difficult,low
+239,Ruby,stone,Al2O3,pale-red,9,adamantine,white,none,conchoidal,3.99,trigonal,metamorphic,"Al,Cr,O",65,B1,medium,industrial ruby,Thailand,250000,very-difficult,low
+240,Sapphire,stone,Al2O3,blue,9,adamantine,white,none,conchoidal,4.0,trigonal,metamorphic,"Al,Fe,Ti,O",97,A1,premium,"jewelry,electronics",Kashmir India,800000,very-difficult,low
+241,Sapphire,stone,Al2O3,pale-blue,9,adamantine,white,none,conchoidal,3.99,trigonal,metamorphic,"Al,Fe,Ti,O",82,A3,high,"watch crystals,gemstone",Australia,500000,very-difficult,low
+242,Sapphire,stone,Al2O3,gray-blue,9,adamantine,white,none,conchoidal,3.98,trigonal,metamorphic,"Al,Fe,Ti,O",62,B2,medium,industrial sapphire,Thailand,180000,very-difficult,low
+243,Emerald,stone,Be3Al2Si6O18,green,7.5,vitreous,white,none,conchoidal,2.72,hexagonal,hydrothermal,"Be,Al,Si,Cr,O",95,A1,premium,"jewelry,fine gemstone",Muzo Colombia,2000000,very-difficult,moderate
+244,Emerald,stone,Be3Al2Si6O18,pale-green,7.5,vitreous,white,none,conchoidal,2.7,hexagonal,hydrothermal,"Be,Al,Si,Cr,O",75,A3,high,gemstone jewelry,Zambia,800000,very-difficult,moderate
+245,Emerald,stone,Be3Al2Si6O18,light-green,7.5,vitreous,white,none,conchoidal,2.68,hexagonal,hydrothermal,"Be,Al,Si,Cr,O",55,B2,medium,decorative,Brazil,350000,very-difficult,moderate
+246,Amethyst,stone,SiO2,purple,7,vitreous,white,none,conchoidal,2.65,trigonal,hydrothermal,"Si,Fe,O",92,A2,premium,"jewelry,decorative",Artigas Uruguay,1200,moderate,low
+247,Amethyst,stone,SiO2,pale-purple,7,vitreous,white,none,conchoidal,2.64,trigonal,hydrothermal,"Si,Fe,O",72,B1,high,jewelry,Minas Gerais Brazil,800,moderate,low
+248,Amethyst,stone,SiO2,light-purple,7,vitreous,white,none,conchoidal,2.63,trigonal,hydrothermal,"Si,Fe,O",52,B3,low,decorative,Zambia,500,moderate,low
+249,Citrine,stone,SiO2,yellow,7,vitreous,white,none,conchoidal,2.65,trigonal,hydrothermal,"Si,Fe,O",88,A2,premium,"jewelry,healing crystal",Minas Gerais Brazil,900,moderate,low
+250,Citrine,stone,SiO2,pale-yellow,7,vitreous,white,none,conchoidal,2.64,trigonal,hydrothermal,"Si,Fe,O",65,B1,medium,decorative jewelry,Bolivia,600,moderate,low
+251,Aquamarine,stone,Be3Al2Si6O18,blue-green,7.5,vitreous,white,none,conchoidal,2.72,hexagonal,hydrothermal,"Be,Al,Si,Fe,O",93,A2,premium,"jewelry,fine gemstone",Minas Gerais Brazil,950000,difficult,low
+252,Aquamarine,stone,Be3Al2Si6O18,pale-blue,7.5,vitreous,white,none,conchoidal,2.7,hexagonal,hydrothermal,"Be,Al,Si,Fe,O",72,B1,high,gemstone,Pakistan,550000,difficult,low
+253,Jade Nephrite,stone,"Ca2(Mg,Fe)5Si8O22(OH)2",green,6.5,waxy,white,none,uneven,3.0,monoclinic,metamorphic,"Ca,Mg,Fe,Si,O",90,A2,premium,"jewelry,carvings",British Columbia Canada,80000,difficult,low
+254,Jade Nephrite,stone,"Ca2(Mg,Fe)5Si8O22(OH)2",white,6.5,waxy,white,none,uneven,2.95,monoclinic,metamorphic,"Ca,Mg,Fe,Si,O",70,B1,high,ornamental carvings,New Zealand,55000,difficult,low
+255,Jade Jadeite,stone,NaAlSi2O6,green,7,vitreous,white,none,uneven,3.3,monoclinic,metamorphic,"Na,Al,Si,O",95,A1,premium,"fine jewelry,carvings",Myanmar,500000,very-difficult,low
+256,Opal,stone,SiO2·nH2O,multicolor,5.5,vitreous,white,none,conchoidal,2.0,amorphous,sedimentary,"Si,O,H",92,A2,premium,"gemstone,ornamental",Coober Pedy Australia,250000,moderate,low
+257,Opal,stone,SiO2·nH2O,white,5,vitreous,white,none,conchoidal,1.95,amorphous,sedimentary,"Si,O,H",72,B1,high,"jewelry,decorative",Nevada USA,100000,moderate,low
+258,Opal,stone,SiO2·nH2O,gray,5,vitreous,white,none,conchoidal,1.9,amorphous,sedimentary,"Si,O,H",52,B3,low,common opal,Mexico,35000,moderate,low
+259,Wulfenite,ore,PbMoO4,orange-red,3,resinous,white,distinct,conchoidal,6.8,tetragonal,hydrothermal,"Pb,Mo,O",80,A3,high,"molybdenum,lead",Red Cloud USA,5000,difficult,moderate
+260,Wulfenite,ore,PbMoO4,yellow,3,resinous,white,distinct,conchoidal,6.6,tetragonal,hydrothermal,"Pb,Mo,O",62,B2,medium,molybdenum extraction,Tsumeb Namibia,3800,difficult,moderate
+261,Molybdenite,ore,MoS2,lead-gray,1,metallic,greenish-gray,perfect,uneven,4.7,hexagonal,hydrothermal,"Mo,S",95,A1,premium,"molybdenum,lubricant,steel alloy",Climax Colorado USA,75000,moderate,high
+262,Molybdenite,ore,MoS2,gray,1,metallic,gray,perfect,uneven,4.6,hexagonal,hydrothermal,"Mo,S",75,A3,high,molybdenum production,British Columbia Canada,60000,moderate,high
+263,Scheelite,ore,CaWO4,white,5,vitreous,white,distinct,conchoidal,6.1,tetragonal,hydrothermal,"Ca,W,O",90,A2,premium,"tungsten,carbide tools",Zinnwald Germany,95000,difficult,moderate
+264,Scheelite,ore,CaWO4,pale-yellow,5,vitreous,white,distinct,conchoidal,5.9,tetragonal,hydrothermal,"Ca,W,O",68,B1,medium,tungsten extraction,Yukon Canada,70000,difficult,moderate
+265,Wolframite,ore,"(Fe,Mn)WO4",black,4.5,submetallic,black,perfect,uneven,7.3,monoclinic,hydrothermal,"Fe,Mn,W,O",88,A2,premium,tungsten production,Panasqueira Portugal,90000,difficult,high
+266,Wolframite,ore,"(Fe,Mn)WO4",brown,4.5,submetallic,dark-red,perfect,uneven,7.1,monoclinic,hydrothermal,"Fe,Mn,W,O",65,B1,medium,tungsten extraction,Jiangxi China,65000,difficult,high
+267,Cinnabar,ore,HgS,scarlet,2.5,adamantine,scarlet,perfect,uneven,8.1,trigonal,hydrothermal,"Hg,S",97,A1,premium,"mercury,vermilion pigment",Almaden Spain,8000,moderate,high
+268,Cinnabar,ore,HgS,dark-red,2.5,adamantine,red,perfect,uneven,7.9,trigonal,hydrothermal,"Hg,S",75,A3,high,mercury production,Idrija Slovenia,6000,moderate,high
+269,Cobaltite,ore,CoAsS,silver-white,5.5,metallic,grayish-black,none,uneven,6.3,orthorhombic,hydrothermal,"Co,As,S",90,A2,premium,"cobalt,lithium batteries",Tunaberg Sweden,35000,difficult,high
+270,Cobaltite,ore,CoAsS,gray,5.5,metallic,gray,none,uneven,6.1,orthorhombic,hydrothermal,"Co,As,S",65,B1,medium,cobalt extraction,Ontario Canada,25000,difficult,high
+271,Sperrylite,ore,PtAs2,tin-white,6.5,metallic,black,none,conchoidal,10.6,cubic,igneous,"Pt,As",92,A2,premium,platinum production,Sudbury Canada,30000000,very-difficult,moderate
+272,Sperrylite,ore,PtAs2,silver-gray,6.5,metallic,black,none,conchoidal,10.3,cubic,igneous,"Pt,As",72,B1,high,platinum extraction,Bushveld South Africa,22000000,very-difficult,moderate
+273,Columbite,ore,"(Fe,Mn)(Nb,Ta)2O6",black,6,submetallic,dark-red,distinct,uneven,5.4,orthorhombic,igneous,"Fe,Mn,Nb,Ta,O",82,A3,high,"niobium,tantalum,electronics",Wodgina Australia,35000,difficult,high
+274,Columbite,ore,"(Fe,Mn)(Nb,Ta)2O6",dark-brown,6,submetallic,dark-red,distinct,uneven,5.2,orthorhombic,igneous,"Fe,Mn,Nb,Ta,O",60,B2,medium,niobium extraction,DRC,25000,difficult,high
+275,Monazite,ore,"(Ce,La,Nd,Th)PO4",brown,5,resinous,white,none,conchoidal,5.0,monoclinic,igneous,"Ce,La,Nd,Th,P,O",85,A2,premium,"rare earth elements,thorium",Western Australia,10000,moderate,high
+276,Monazite,ore,"(Ce,La,Nd,Th)PO4",pale-brown,5,resinous,white,none,conchoidal,4.8,monoclinic,igneous,"Ce,La,Nd,Th,P,O",62,B2,medium,rare earth processing,India,7500,moderate,high
+277,Bastnasite,ore,"(Ce,La)(CO3)F",yellow,4.5,vitreous,white,none,uneven,4.9,hexagonal,hydrothermal,"Ce,La,C,O,F",88,A2,premium,"rare earth elements,magnets",Bayan Obo China,12000,difficult,moderate
+278,Bastnasite,ore,"(Ce,La)(CO3)F",pale-yellow,4.5,vitreous,white,none,uneven,4.7,hexagonal,hydrothermal,"Ce,La,C,O,F",65,B1,medium,rare earth extraction,Mountain Pass USA,9000,difficult,moderate
+279,Xenotime,ore,YPO4,brown,4.5,vitreous,pale-brown,none,uneven,4.5,tetragonal,igneous,"Y,P,O",78,A3,high,"yttrium,rare earths",Western Australia,8000,difficult,moderate
+280,Loparite,ore,"(Na,Ce,Ca)(Ti,Nb)O3",black,5.5,metallic,gray,none,conchoidal,4.9,cubic,igneous,"Na,Ce,Ca,Ti,Nb,O",80,A3,high,"rare earth elements,niobium",Kola Russia,15000,difficult,high
+281,Chromian Spinel,ore,"(Mg,Fe)(Cr,Al,Fe)2O4",black,7.5,submetallic,dark-brown,none,conchoidal,4.5,cubic,igneous,"Mg,Fe,Cr,Al,O",88,A2,premium,"refractory,chromium",Bushveld South Africa,400,moderate,moderate
+282,Tennantite,ore,Cu12As4S13,gray,3.5,metallic,black,none,conchoidal,4.6,cubic,hydrothermal,"Cu,As,S",82,A3,high,"copper,arsenic",Brixlegg Austria,7500,difficult,high
+283,Tetrahedrite,ore,Cu12Sb4S13,gray-black,3.5,metallic,black,none,conchoidal,4.9,cubic,hydrothermal,"Cu,Sb,S",78,A3,high,"copper,silver,antimony",Freiberg Germany,8000,difficult,high
+284,Bournonite,ore,PbCuSbS3,steel-gray,2.5,metallic,gray,imperfect,conchoidal,5.8,orthorhombic,hydrothermal,"Pb,Cu,Sb,S",80,A3,high,"lead,copper,antimony",Cornwall UK,4000,difficult,high
+285,Enargite,ore,Cu3AsS4,gray-black,3,metallic,black,perfect,uneven,4.5,orthorhombic,hydrothermal,"Cu,As,S",87,A2,premium,"copper,arsenic production",Butte Montana USA,7000,difficult,high
+286,Proustite,ore,Ag3AsS3,scarlet-vermillion,2.5,adamantine,vermillion,none,conchoidal,5.6,trigonal,hydrothermal,"Ag,As,S",85,A2,premium,silver production,Chañarcillo Chile,22000,difficult,high
+287,Stephanite,ore,Ag5SbS4,iron-black,2.5,metallic,iron-black,imperfect,uneven,6.3,orthorhombic,hydrothermal,"Ag,Sb,S",83,A3,high,"silver,antimony",Freiberg Germany,20000,difficult,high
+288,Naumannite,ore,Ag2Se,iron-black,2.5,metallic,black,none,uneven,8.0,orthorhombic,hydrothermal,"Ag,Se",90,A2,premium,"silver,selenium",Joachimsthal Czech,25000,difficult,high
+289,Stibnite,ore,Sb2S3,lead-gray,2,metallic,lead-gray,perfect,uneven,4.6,orthorhombic,hydrothermal,"Sb,S",97,A1,premium,"antimony production,flame retardant",Xikuangshan China,6000,moderate,high
+290,Stibnite,ore,Sb2S3,dark-gray,2,metallic,gray,perfect,uneven,4.4,orthorhombic,hydrothermal,"Sb,S",75,A3,high,antimony extraction,Serbia,4500,moderate,high
+291,Bismuthinite,ore,Bi2S3,lead-gray,2,metallic,lead-gray,perfect,uneven,6.8,orthorhombic,hydrothermal,"Bi,S",90,A2,premium,"bismuth production,cosmetics",Tasna Bolivia,12000,difficult,high
+292,Vanadinite,ore,Pb5(VO4)3Cl,orange-red,3,resinous,white,none,conchoidal,6.9,hexagonal,hydrothermal,"Pb,V,O,Cl",85,A2,premium,"vanadium,lead",Mibladen Morocco,8000,difficult,moderate
+293,Crocoite,ore,PbCrO4,orange-red,2.5,adamantine,orange-yellow,distinct,conchoidal,6.0,monoclinic,hydrothermal,"Pb,Cr,O",80,A3,high,"chromium,lead,pigment",Dundas Tasmania,5000,difficult,moderate
+294,Pyrite,ore,FeS2,brass-yellow,6,metallic,greenish-black,none,uneven,5.0,cubic,hydrothermal,"Fe,S",78,A3,high,"sulfuric acid,gold recovery",Rio Tinto Spain,200,easy,high
+295,Pyrite,ore,FeS2,gold-yellow,6,metallic,greenish-black,none,uneven,4.9,cubic,hydrothermal,"Fe,S",60,B2,medium,sulfur production,Elba Island Italy,150,easy,high
+296,Arsenopyrite,ore,FeAsS,silver-white,5.5,metallic,black,none,uneven,6.1,monoclinic,hydrothermal,"Fe,As,S",82,A3,high,"arsenic,gold recovery",Freiberg Germany,500,moderate,high
+297,Arsenopyrite,ore,FeAsS,gray,5.5,metallic,dark-gray,none,uneven,5.9,monoclinic,hydrothermal,"Fe,As,S",60,B2,medium,arsenic extraction,Portugal,350,moderate,high
+298,Nickeline,ore,NiAs,pale-copper-red,5.5,metallic,brownish-black,none,uneven,7.8,hexagonal,hydrothermal,"Ni,As",88,A2,premium,"nickel,arsenic",Schneeberg Germany,18000,difficult,high
+299,Smithsonite,ore,ZnCO3,white,4.5,vitreous,white,perfect,conchoidal,4.4,trigonal,sedimentary,"Zn,C,O",85,A2,premium,"zinc,ornamental",Kelly New Mexico USA,2800,moderate,moderate
+300,Smithsonite,ore,ZnCO3,blue-green,4.5,vitreous,white,perfect,conchoidal,4.3,trigonal,sedimentary,"Zn,C,O",65,B1,medium,zinc extraction,Laurion Greece,2000,moderate,moderate
+301,Talc,mineral,Mg3Si4O10(OH)2,white,1,pearly,white,perfect,uneven,2.75,monoclinic,metamorphic,"Mg,Si,O",95,A1,premium,"cosmetics,ceramics,paint",Montana USA,300,easy,low
+302,Talc,mineral,Mg3Si4O10(OH)2,gray-green,1,pearly,white,perfect,uneven,2.7,monoclinic,metamorphic,"Mg,Si,O",75,A3,high,industrial filler,France,200,easy,low
+303,Serpentine,mineral,Mg3Si2O5(OH)4,green,3.5,waxy,white,none,uneven,2.5,monoclinic,metamorphic,"Mg,Si,O,H",72,B1,high,"asbestos-free insulation,decorative",Quebec Canada,180,moderate,low
+304,Chlorite,mineral,"(Mg,Fe)5Al(AlSi3O10)(OH)8",green,2,pearly,pale-green,perfect,uneven,2.6,monoclinic,metamorphic,"Mg,Fe,Al,Si,O",68,B1,medium,"filler,ceramics",Vermont USA,120,easy,low
+305,Kyanite,mineral,Al2SiO5,blue,6,vitreous,white,perfect,uneven,3.6,triclinic,metamorphic,"Al,Si,O",90,A2,premium,"refractories,spark plugs",Kenya,550,moderate,low
+306,Kyanite,mineral,Al2SiO5,gray,6,vitreous,white,perfect,uneven,3.58,triclinic,metamorphic,"Al,Si,O",68,B1,medium,refractory materials,North Carolina USA,380,moderate,low
+307,Sillimanite,mineral,Al2SiO5,white,7,vitreous,white,perfect,uneven,3.25,orthorhombic,metamorphic,"Al,Si,O",88,A2,premium,"refractories,ceramics",Sri Lanka,500,difficult,low
+308,Andalusite,mineral,Al2SiO5,pink,7.5,vitreous,white,poor,uneven,3.17,orthorhombic,metamorphic,"Al,Si,O",82,A3,high,"refractories,ceramics",Spain,450,moderate,low
+309,Staurolite,mineral,Fe2Al9Si4O23(OH),brown,7,vitreous,gray,poor,conchoidal,3.75,monoclinic,metamorphic,"Fe,Al,Si,O",75,A3,high,"collector mineral,jewelry",Piemonte Italy,600,difficult,low
+310,Cordierite,mineral,Mg2Al4Si5O18,blue,7,vitreous,white,none,conchoidal,2.6,orthorhombic,metamorphic,"Mg,Al,Si,O",82,A3,high,"gemstone,ceramics",Sri Lanka,1200,moderate,low
+311,Prehnite,mineral,Ca2Al2Si3O10(OH)2,pale-green,6.5,vitreous,white,distinct,uneven,2.9,orthorhombic,hydrothermal,"Ca,Al,Si,O",78,A3,high,"collector mineral,gemstone",Western Australia,800,moderate,low
+312,Pectolite,mineral,NaCa2Si3O8(OH),white,5,silky,white,perfect,uneven,2.86,triclinic,hydrothermal,"Na,Ca,Si,O",72,B1,high,Larimar gemstone,Dominican Republic,2000,difficult,low
+313,Natrolite,mineral,Na2Al2Si3O10·2H2O,white,5.5,vitreous,white,perfect,uneven,2.25,orthorhombic,igneous,"Na,Al,Si,O",85,A2,premium,"zeolite applications,water treatment",Bohemia Czech,650,moderate,low
+314,Scapolite,mineral,"(Na,Ca)4Al3Si9O24(Cl,CO3)",white,6,vitreous,white,distinct,conchoidal,2.65,tetragonal,metamorphic,"Na,Ca,Al,Si,O,Cl",72,B1,high,"gemstone,research",Tanzania,1000,difficult,low
+315,Epidote,mineral,"Ca2Al2(Fe,Al)Si3O12(OH)",yellow-green,6.5,vitreous,gray,perfect,uneven,3.4,monoclinic,metamorphic,"Ca,Al,Fe,Si,O",75,A3,high,collector mineral,Austria,400,moderate,low
+316,Vesuvianite,mineral,Ca10Mg2Al4Si9O34(OH)4,green,6.5,vitreous,white,poor,uneven,3.4,tetragonal,metamorphic,"Ca,Mg,Al,Si,O",78,A3,high,"gemstone,collector",Vesuvius Italy,600,difficult,low
+317,Wollastonite,mineral,CaSiO3,white,5,vitreous,white,perfect,uneven,2.9,triclinic,metamorphic,"Ca,Si,O",88,A2,premium,"ceramics,filler,paint",Willsboro USA,380,moderate,low
+318,Chrysocolla,mineral,"(Cu,Al)2H2Si2O5(OH)4·nH2O",blue-green,2.5,waxy,white,none,conchoidal,2.0,amorphous,hydrothermal,"Cu,Al,Si,O",72,B1,high,"ornamental,copper extraction",Bisbee USA,3500,moderate,moderate
+319,Azurmalachite,mineral,Cu3(CO3)2(OH)2+Cu2(CO3)(OH)2,blue-green,3.5,vitreous,pale-green,perfect,uneven,3.8,monoclinic,hydrothermal,"Cu,C,O,H",82,A3,high,"ornamental,jewelry",Katanga DRC,12000,difficult,moderate
+320,Lapis Lazuli,stone,"(Na,Ca)8(AlSiO4)6(SO4,S,Cl)2",blue,5.5,waxy,light-blue,none,uneven,2.8,cubic,metamorphic,"Na,Ca,Al,Si,S,O",88,A2,premium,"jewelry,pigment,ornamental",Badakhshan Afghanistan,15000,difficult,low
+321,Lapis Lazuli,stone,"(Na,Ca)8(AlSiO4)6(SO4,S,Cl)2",medium-blue,5.5,waxy,light-blue,none,uneven,2.75,cubic,metamorphic,"Na,Ca,Al,Si,S,O",68,B1,medium,ornamental,Chile,9000,difficult,low
+322,Malachite (stone),stone,Cu2(CO3)(OH)2,vivid-green,3.5,vitreous,pale-green,perfect,uneven,4.0,monoclinic,hydrothermal,"Cu,C,O,H",90,A2,premium,"ornamental,sculpture",Katanga DRC,18000,moderate,moderate
+323,Labradorite,stone,"(Ca,Na)(Al,Si)4O8",gray-blue,6,vitreous,white,perfect,uneven,2.7,triclinic,igneous,"Ca,Na,Al,Si,O",85,A2,premium,"jewelry,dimension stone",Labrador Canada,800,easy,low
+324,Moonstone,stone,KAlSi3O8,white-blue,6,vitreous,white,perfect,uneven,2.57,monoclinic,igneous,"K,Al,Si,O",88,A2,premium,"jewelry,gemstone",Sri Lanka,5000,moderate,low
+325,Sunstone,stone,"(Ca,Na)(Al,Si)4O8",orange-red,6,vitreous,white,perfect,uneven,2.65,triclinic,igneous,"Ca,Na,Al,Si,O",82,A3,high,"jewelry,decorative",Oregon USA,3000,moderate,low
+326,Chrysoprase,stone,SiO2+Ni,apple-green,7,vitreous,white,none,conchoidal,2.62,trigonal,sedimentary,"Si,Ni,O",88,A2,premium,"jewelry,gemstone",Queensland Australia,2000,moderate,low
+327,Carnelian,stone,SiO2,red-orange,7,waxy,white,none,conchoidal,2.61,trigonal,sedimentary,"Si,Fe,O",82,A3,high,"jewelry,ornamental",India,800,moderate,low
+328,Onyx,stone,SiO2,black-white,7,waxy,white,none,conchoidal,2.61,trigonal,sedimentary,"Si,O",85,A2,premium,"jewelry,carvings",Brazil,600,moderate,low
+329,Jasper,stone,SiO2,red,7,dull,white,none,conchoidal,2.6,trigonal,sedimentary,"Si,Fe,O",82,A3,high,"ornamental,carvings",Oregon USA,500,easy,low
+330,Peridot,stone,"(Mg,Fe)2SiO4",yellowish-green,6.5,vitreous,colorless,none,conchoidal,3.4,orthorhombic,igneous,"Mg,Fe,Si,O",90,A2,premium,"gemstone,jewelry",Red Sea Egypt,12000,difficult,low
+331,Alexandrite,stone,BeAl2O4,green-red,8.5,vitreous,white,distinct,conchoidal,3.75,orthorhombic,metamorphic,"Be,Al,O",95,A1,premium,"gemstone,color-change jewelry",Ural Russia,1500000,very-difficult,low
+332,Tanzanite,stone,Ca2Al3(SiO4)(Si2O7)O(OH),blue-violet,6.5,vitreous,white,perfect,uneven,3.35,orthorhombic,metamorphic,"Ca,Al,Si,O",93,A2,premium,"gemstone,jewelry",Merelani Tanzania,1200000,very-difficult,low
+333,Morganite,stone,Be3Al2Si6O18,pink,7.5,vitreous,white,none,conchoidal,2.72,hexagonal,hydrothermal,"Be,Al,Si,Mn,O",90,A2,premium,"gemstone,jewelry",Minas Gerais Brazil,180000,difficult,low
+334,Heliodor,stone,Be3Al2Si6O18,yellow,7.5,vitreous,white,none,conchoidal,2.71,hexagonal,hydrothermal,"Be,Al,Si,Fe,O",85,A2,premium,"gemstone,jewelry",Ukraine,100000,difficult,low
+335,Spessartine,stone,Mn3Al2Si3O12,orange-red,7.5,vitreous,white,none,conchoidal,4.2,cubic,metamorphic,"Mn,Al,Si,O",88,A2,premium,"gemstone,abrasive",Namibia,3500,moderate,low
+336,Demantoid,stone,Ca3Fe2Si3O12,green,6.5,adamantine,white,none,conchoidal,3.82,cubic,metamorphic,"Ca,Fe,Si,O",92,A2,premium,"gemstone,jewelry",Ural Russia,1000000,very-difficult,low
+337,Tsavorite,stone,Ca3Al2Si3O12,green,7.5,vitreous,white,none,conchoidal,3.6,cubic,metamorphic,"Ca,Al,Si,V,O",95,A1,premium,"gemstone,jewelry",Tsavo Kenya,500000,very-difficult,low
