@@ -1,0 +1,112 @@
+{% extends "base.html" %}
+{% block title %}Sandy Pro — Dataset Browser{% endblock %}
+
+{% block content %}
+<div class="container" style="padding-top:2rem;padding-bottom:3rem;">
+  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1.5rem;flex-wrap:wrap;gap:1rem;">
+    <div>
+      <h1 style="font-size:1.8rem;font-weight:700;">🗃 Minerals Dataset</h1>
+      <p style="color:var(--text-muted);font-size:0.9rem;margin-top:0.25rem;">Browse, search and filter the complete reference dataset</p>
+    </div>
+    <div style="display:flex;gap:0.75rem;align-items:center;flex-wrap:wrap;">
+      <span id="record-count" style="color:var(--text-muted);font-size:0.85rem;"></span>
+      <a href="/api/dataset/export" class="btn btn-secondary" style="font-size:0.85rem;padding:0.5rem 1rem;">⬇ Export CSV</a>
+    </div>
+  </div>
+
+  <!-- Filters -->
+  <div class="card mb-3">
+    <div style="display:grid;grid-template-columns:2fr 1fr 1fr 1fr 1fr;gap:1rem;align-items:end;flex-wrap:wrap;">
+      <div class="form-group" style="margin-bottom:0">
+        <label class="form-label">🔍 Search</label>
+        <input type="text" id="search-input" class="form-control" placeholder="Name, formula, category…"/>
+      </div>
+      <div class="form-group" style="margin-bottom:0">
+        <label class="form-label">Category</label>
+        <select id="filter-category" class="form-control">
+          <option value="">All</option>
+          <option value="ore">Ore</option>
+          <option value="mineral">Mineral</option>
+          <option value="rock">Rock</option>
+          <option value="stone">Stone</option>
+        </select>
+      </div>
+      <div class="form-group" style="margin-bottom:0">
+        <label class="form-label">Grade</label>
+        <select id="filter-grade" class="form-control">
+          <option value="">All</option>
+          <option value="A1">A1</option><option value="A2">A2</option>
+          <option value="A3">A3</option><option value="B1">B1</option>
+          <option value="B2">B2</option><option value="B3">B3</option>
+          <option value="C1">C1</option><option value="C2">C2</option>
+        </select>
+      </div>
+      <div class="form-group" style="margin-bottom:0">
+        <label class="form-label">Commercial Value</label>
+        <select id="filter-cv" class="form-control">
+          <option value="">All</option>
+          <option value="premium">Premium</option>
+          <option value="high">High</option>
+          <option value="medium">Medium</option>
+          <option value="low">Low</option>
+          <option value="marginal">Marginal</option>
+        </select>
+      </div>
+      <div class="form-group" style="margin-bottom:0">
+        <label class="form-label">Sort By</label>
+        <select id="sort-by" class="form-control">
+          <option value="name">Name</option>
+          <option value="purity">Purity</option>
+          <option value="hardness">Hardness</option>
+          <option value="market_value">Market Value</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <!-- Table -->
+  <div class="card">
+    <div class="table-wrapper">
+      <table id="dataset-table">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>Category</th>
+            <th>Formula</th>
+            <th>Hardness</th>
+            <th>Purity %</th>
+            <th>Grade</th>
+            <th>Commercial</th>
+            <th>Formation</th>
+            <th>Market $/t</th>
+          </tr>
+        </thead>
+        <tbody id="dataset-tbody">
+          <tr><td colspan="10" style="text-align:center;padding:2rem;color:var(--text-muted);">Loading…</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Pagination -->
+    <div style="display:flex;align-items:center;justify-content:space-between;margin-top:1rem;flex-wrap:wrap;gap:0.75rem;">
+      <div id="pagination-info" style="color:var(--text-muted);font-size:0.85rem;"></div>
+      <div style="display:flex;gap:0.5rem;" id="pagination-btns"></div>
+    </div>
+  </div>
+</div>
+
+<!-- Row detail modal -->
+<div class="modal-backdrop" id="row-modal">
+  <div class="modal">
+    <button class="modal-close" id="modal-close">✕</button>
+    <h2 id="modal-name" style="font-size:1.4rem;font-weight:700;margin-bottom:0.25rem;"></h2>
+    <div id="modal-badge" class="badge mb-2"></div>
+    <div id="modal-body" style="margin-top:1rem;"></div>
+  </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script src="{{ url_for('static', filename='js/dataset.js') }}"></script>
+{% endblock %}

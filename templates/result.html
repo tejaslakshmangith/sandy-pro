@@ -1,0 +1,133 @@
+{% extends "base.html" %}
+{% block title %}Sandy Pro — Classification Result{% endblock %}
+{% block extra_css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/result.css') }}"/>
+{% endblock %}
+
+{% block content %}
+<!-- No-result fallback (shown when page loaded directly without data) -->
+<div id="no-result" class="container" style="text-align:center;padding:5rem 0;">
+  <div style="font-size:4rem;margin-bottom:1rem;">🪨</div>
+  <h2 style="color:var(--text-muted);margin-bottom:1rem;">No classification result found</h2>
+  <p style="color:var(--text-muted);margin-bottom:2rem;">Upload and analyze a sample to see results here.</p>
+  <a href="/" class="btn btn-primary">⛏ Analyze a Sample</a>
+</div>
+
+<!-- Result content (populated by JS) -->
+<div id="result-content" class="d-none">
+  <!-- Header banner -->
+  <div class="result-header">
+    <div class="container">
+      <div class="result-header-inner">
+        <div style="flex:1">
+          <span id="category-badge" class="category-banner">—</span>
+          <h1 id="result-name" class="result-name mt-1">—</h1>
+          <div id="result-formula" class="result-formula"></div>
+          <div id="result-common" class="result-formula" style="font-style:normal;"></div>
+        </div>
+
+        <!-- Grade badge -->
+        <div class="grade-display">
+          <div id="grade-badge" class="grade-badge-huge">—</div>
+          <div id="grade-label" class="grade-label-text">—</div>
+        </div>
+
+        <!-- Purity meter -->
+        <div class="purity-meter-wrap">
+          <svg class="purity-circle-svg" width="120" height="120" viewBox="0 0 120 120">
+            <circle class="purity-track" cx="60" cy="60" r="50"/>
+            <circle id="purity-fill" class="purity-fill" cx="60" cy="60" r="50"
+                    stroke-dasharray="314" stroke-dashoffset="314"/>
+            <text id="purity-text" class="purity-value-text" x="60" y="60">0%</text>
+          </svg>
+          <div class="purity-label-below">Purity</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main content -->
+  <div class="result-content">
+    <div class="container">
+
+      <!-- Confidence -->
+      <div class="card mb-3">
+        <div class="card-header">🎯 AI Confidence Score</div>
+        <div class="confidence-bar-label">
+          <span>Confidence</span>
+          <span id="confidence-val">—</span>
+        </div>
+        <div class="progress-bar-wrap">
+          <div id="confidence-bar" class="progress-bar-fill" style="width:0%;background:linear-gradient(90deg,#4fc3f7,#00ff88);"></div>
+        </div>
+      </div>
+
+      <!-- Details grid -->
+      <div class="result-grid mb-3">
+        <div class="card">
+          <div class="card-header">📊 Physical Properties</div>
+          <div class="info-row"><span class="info-label">Hardness (Mohs)</span>
+            <div class="hardness-bar" id="hardness-bar"></div>
+          </div>
+          <div class="info-row"><span class="info-label">Texture</span><span class="info-value" id="val-texture">—</span></div>
+          <div class="info-row"><span class="info-label">Luster</span><span class="info-value" id="val-luster">—</span></div>
+          <div class="info-row"><span class="info-label">Color</span><span class="info-value" id="val-color">—</span></div>
+          <div class="info-row"><span class="info-label">Formation</span><span class="info-value" id="val-formation">—</span></div>
+          <div class="info-row"><span class="info-label">Geological Age</span><span class="info-value" id="val-age">—</span></div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">💰 Commercial Intelligence</div>
+          <div class="info-row"><span class="info-label">Commercial Value</span><span class="info-value" id="val-commercial">—</span></div>
+          <div class="info-row"><span class="info-label">Market Value</span><span class="info-value" id="val-market">—</span></div>
+          <div class="info-row"><span class="info-label">Mining Suitability</span><span class="info-value" id="val-mining">—</span></div>
+          <div class="info-row"><span class="info-label">Extraction Difficulty</span><span class="info-value" id="val-extraction">—</span></div>
+          <div class="info-row"><span class="info-label">Environmental Impact</span><span class="info-value" id="val-env">—</span></div>
+          <div class="info-row"><span class="info-label">Analysis Source</span><span class="info-value" id="val-source" style="font-size:0.78rem;color:var(--text-muted);">—</span></div>
+        </div>
+      </div>
+
+      <!-- Elements & minerals -->
+      <div class="result-grid mb-3">
+        <div class="card">
+          <div class="card-header">⚗️ Primary Elements</div>
+          <div class="tags" id="elements-tags"></div>
+        </div>
+        <div class="card">
+          <div class="card-header">🔗 Associated Minerals</div>
+          <div class="tags" id="minerals-tags"></div>
+        </div>
+      </div>
+
+      <!-- Industrial uses -->
+      <div class="card mb-3">
+        <div class="card-header">🏭 Industrial Uses</div>
+        <div class="tags" id="uses-tags"></div>
+      </div>
+
+      <!-- Analysis notes -->
+      <div class="card mb-3">
+        <div class="card-header">📝 Geological Analysis</div>
+        <div class="analysis-notes" id="analysis-notes">—</div>
+      </div>
+
+      <!-- Recommended processing -->
+      <div class="card mb-3">
+        <div class="card-header">⚙️ Recommended Processing</div>
+        <div class="processing-steps" id="processing-steps"></div>
+      </div>
+
+      <!-- Action buttons -->
+      <div class="action-buttons">
+        <a href="/" class="btn btn-primary">⛏ Analyze Another</a>
+        <button class="btn btn-secondary" id="download-btn">⬇ Download Report</button>
+        <a href="/dashboard" class="btn btn-outline">📊 View Dashboard</a>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script src="{{ url_for('static', filename='js/result.js') }}"></script>
+{% endblock %}

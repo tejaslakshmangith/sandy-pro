@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <!-- Pickaxe head -->
+  <path d="M10 18 L28 36" stroke="#f5c842" stroke-width="5" stroke-linecap="round"/>
+  <path d="M10 18 C6 10 14 4 20 8 L28 16 C22 14 14 16 10 18Z" fill="#f5c842"/>
+  <path d="M28 16 C32 12 40 8 46 12 L38 20 C34 16 30 16 28 16Z" fill="#ff6b35"/>
+  <!-- Handle -->
+  <path d="M28 36 L50 58" stroke="#8888aa" stroke-width="4" stroke-linecap="round"/>
+  <!-- Ore/gem accent -->
+  <polygon points="52,8 56,14 52,20 48,14" fill="#00ff88" opacity="0.9"/>
+  <polygon points="52,8 56,14 52,14 48,14" fill="#00cc66" opacity="0.9"/>
+</svg>
