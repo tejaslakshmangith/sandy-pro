@@ -105,6 +105,37 @@
     <div id="modal-body" style="margin-top:1rem;"></div>
   </div>
 </div>
+
+<!-- Mineral Reference Library -->
+<div class="container" style="padding-bottom:3rem;">
+  <div style="margin-bottom:1.5rem;">
+    <h2 style="font-size:1.5rem;font-weight:700;">📚 Mineral Reference Library</h2>
+    <p style="color:var(--text-muted);font-size:0.9rem;margin-top:0.25rem;">Reference metadata from Kaggle mineral &amp; rock classification datasets</p>
+  </div>
+
+  <div class="card mb-3">
+    <div style="display:flex;gap:1rem;align-items:end;flex-wrap:wrap;">
+      <div class="form-group" style="flex:2;margin-bottom:0;">
+        <label class="form-label">🔍 Search mineral or category</label>
+        <input type="text" id="mineral-search" class="form-control" placeholder="e.g. Quartz, Iron Ore, Silicate…"/>
+      </div>
+      <div class="form-group" style="flex:1;margin-bottom:0;min-width:160px;">
+        <label class="form-label">Category</label>
+        <select id="mineral-category-filter" class="form-control">
+          <option value="">All categories</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <div id="mineral-source-badges" style="display:flex;gap:0.5rem;flex-wrap:wrap;margin-bottom:1rem;"></div>
+
+  <div id="mineral-cards-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1rem;">
+    <div style="color:var(--text-muted);padding:2rem;text-align:center;">Loading mineral data…</div>
+  </div>
+
+  <div id="mineral-empty" style="display:none;text-align:center;padding:2rem;color:var(--text-muted);">No minerals match your search.</div>
+</div>
 {% endblock %}
 
 {% block extra_js %}
