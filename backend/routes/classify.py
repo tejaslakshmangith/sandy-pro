@@ -6,6 +6,7 @@ import os
 from flask import Blueprint, jsonify, request, session
 
 from backend import gemini_service, ml_classifier
+from backend import roboflow_service
 from backend.grading_engine import compute_grade
 from backend.config import Config
 
@@ -30,6 +31,11 @@ def classify():
         - multipart/form-data with 'image' file
         - JSON or form field 'description' (text only)
 
+    Priority:
+        1. Roboflow ore_dataset model (image)
+        2. Gemini Vision API (image + description)
+        3. ML scikit-learn fallback
+
     Returns:
         JSON classification result.
     """
@@ -51,22 +57,39 @@ def classify():
     if not image_bytes and not description:
         return jsonify({"error": "Provide an image or description"}), 400
 
-    # --- Gemini analysis ---
     result = None
-    try:
-        if image_bytes:
-            result = gemini_service.analyze_image(image_bytes, description)
-        else:
-            result = gemini_service.analyze_description(description)
-    except Exception as exc:
-        logger.warning("Gemini API failed: %s. Falling back to ML classifier.", exc)
+    classifier_source = "unknown"
 
-    # --- ML fallback ---
+    # --- 1. Roboflow ore_dataset classifier (image only) ---
+    if image_bytes:
+        try:
+            result = roboflow_service.classify_image(image_bytes)
+            if result:
+                classifier_source = "roboflow"
+                logger.info("Roboflow classifier succeeded: %s", result.get("roboflow_class"))
+        except Exception as exc:
+            logger.warning("Roboflow classifier failed: %s", exc)
+            result = None
+
+    # --- 2. Gemini Vision API ---
+    if result is None:
+        try:
+            if image_bytes:
+                result = gemini_service.analyze_image(image_bytes, description)
+            else:
+                result = gemini_service.analyze_description(description)
+            if result:
+                classifier_source = "gemini"
+        except Exception as exc:
+            logger.warning("Gemini API failed: %s. Falling back to ML classifier.", exc)
+
+    # --- 3. ML scikit-learn fallback ---
     if result is None:
         result = ml_classifier.classify_features(
             color=description[:20] if description else "gray",
             purity_percentage=60.0,
         )
+        classifier_source = "ml_fallback"
 
     # --- Ensure grade is consistent with purity ---
     purity = float(result.get("purity_percentage", 60))
@@ -74,6 +97,7 @@ def classify():
     result["quality_grade"] = grade_info["grade"]
     result["grade_color"] = grade_info["color"]
     result["grade_label"] = grade_info["label"]
+    result["classifier_source"] = classifier_source
 
     # Ensure lists are lists
     for key in ("primary_elements", "associated_minerals", "industrial_uses"):
@@ -86,3 +110,4 @@ def classify():
     session["last_result"] = result
 
     return jsonify(result)
+

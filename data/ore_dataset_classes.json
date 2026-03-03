@@ -1,0 +1,13 @@
+{
+  "source": "Roboflow Universe — mineral1/ore_dataset v1",
+  "url": "https://universe.roboflow.com/mineral1/ore_dataset",
+  "license": "CC BY 4.0",
+  "classes": [
+    {"id": 0, "name": "hematite",  "formula": "Fe2O3",      "category": "Iron Ore",    "commercial_value": "High"},
+    {"id": 1, "name": "ilmenite",  "formula": "FeTiO3",     "category": "Titanium Ore","commercial_value": "High"},
+    {"id": 2, "name": "limonite",  "formula": "FeO(OH).nH2O","category": "Iron Ore",  "commercial_value": "Medium"},
+    {"id": 3, "name": "magnetite", "formula": "Fe3O4",      "category": "Iron Ore",    "commercial_value": "High"},
+    {"id": 4, "name": "pyrite",    "formula": "FeS2",       "category": "Sulfide Ore", "commercial_value": "Medium"},
+    {"id": 5, "name": "rock",      "formula": "N/A",        "category": "Rock",        "commercial_value": "Low"}
+  ]
+}
