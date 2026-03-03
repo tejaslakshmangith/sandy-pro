@@ -16,3 +16,7 @@ class Config:
     ML_MODEL_PATH = "ml_models/classifier.pkl"
     DATASET_PATH = "data/minerals_dataset.csv"
     SECRET_KEY = os.getenv("SECRET_KEY", "sandy-pro-mining-secret")
+    ROBOFLOW_API_KEY: str = os.getenv("ROBOFLOW_API_KEY", "")
+    ROBOFLOW_WORKSPACE: str = "mineral1"
+    ROBOFLOW_PROJECT: str = "ore_dataset"
+    ROBOFLOW_VERSION: int = 1

@@ -64,6 +64,7 @@ docker-compose up --build
 | `GEMINI_API_KEY` | Google Gemini API key (get from https://aistudio.google.com/) |
 | `SECRET_KEY` | Flask session secret |
 | `FLASK_ENV` | Flask environment (development/production) |
+| `ROBOFLOW_API_KEY` | Roboflow API key (get from https://app.roboflow.com/settings/api) |
 
 ## API Endpoints
 
@@ -74,6 +75,7 @@ docker-compose up --build
 | GET | /api/dataset | Paginated, filtered dataset |
 | GET | /api/dataset/export | Export dataset as CSV |
 | GET | /api/dashboard/stats | Aggregated statistics |
+| GET | /api/roboflow/info | Roboflow ore_dataset metadata and API key status |
 
 ## Grade Scale
 
@@ -100,3 +102,45 @@ python ml_models/train_model.py
 ```
 
 Trains a RandomForestClassifier and saves to ml_models/classifier.pkl.
+
+## Ore Dataset Integration (Roboflow)
+
+Sandy Pro integrates the [Roboflow Universe `ore_dataset`](https://universe.roboflow.com/mineral1/ore_dataset) (by `mineral1`) for real-world ore/mineral image classification.
+
+### Datasets
+
+| Dataset | Source | Use |
+|---|---|---|
+| ore_dataset v1 | [Roboflow Universe](https://universe.roboflow.com/mineral1/ore_dataset) | Primary image classifier (6 ore classes) |
+| Mineral Photos | [Kaggle](https://www.kaggle.com/datasets/floriangeillon/mineral-photos) | Reference metadata/labels |
+| Rock Classification | [Kaggle](https://www.kaggle.com/datasets/salmaneunus/rock-classification) | Reference metadata/labels |
+
+### Ore Classes
+
+hematite, ilmenite, limonite, magnetite, pyrite, rock
+
+### Setup
+
+Add your Roboflow API key to `.env`:
+
+```dotenv
+ROBOFLOW_API_KEY=your_roboflow_api_key_here
+```
+
+Get your API key from https://app.roboflow.com/settings/api
+
+### Classification Pipeline Priority
+
+```
+1. Roboflow ore_dataset classifier  (image only)
+2. Gemini Vision API                (image + optional text description)
+3. scikit-learn ML fallback
+```
+
+When an image is uploaded, Sandy Pro first tries the Roboflow hosted classification API. If the API key is not set or the call fails, it falls through to Gemini, then to the ML fallback. The `classifier_source` field in the JSON response indicates which engine produced the result.
+
+### New Endpoints
+
+| Method | Path | Description |
+|---|---|---|
+| GET | /api/roboflow/info | ore_dataset metadata and API key status |

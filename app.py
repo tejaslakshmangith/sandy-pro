@@ -23,11 +23,13 @@ def create_app():
     from backend.routes.classify import classify_bp
     from backend.routes.dataset import dataset_bp
     from backend.routes.dashboard import dashboard_bp
+    from backend.routes.roboflow_info import roboflow_bp
 
     app.register_blueprint(health_bp)
     app.register_blueprint(classify_bp)
     app.register_blueprint(dataset_bp)
     app.register_blueprint(dashboard_bp)
+    app.register_blueprint(roboflow_bp)
 
     # Page routes
     @app.route("/")
