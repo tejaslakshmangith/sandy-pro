@@ -2,6 +2,8 @@
 
 import csv
 import io
+import json
+import pathlib
 
 from flask import Blueprint, jsonify, request, Response
 
@@ -53,3 +55,12 @@ def get_row(row_id: int):
     if row is None:
         return jsonify({"error": "Not found"}), 404
     return jsonify(row)
+
+
+@dataset_bp.route("/api/dataset/minerals-meta")
+def minerals_meta():
+    """Return Kaggle minerals reference metadata."""
+    path = pathlib.Path("data/kaggle_minerals_meta.json")
+    if not path.exists():
+        return jsonify({"error": "Not found"}), 404
+    return jsonify(json.loads(path.read_text()))

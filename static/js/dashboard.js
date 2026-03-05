@@ -128,12 +128,77 @@
         tbody.innerHTML = recent.map((r, i) => `
           <tr>
             <td>${i + 1}</td>
-            <td>${r.specific_name || '—'}</td>
+            <td>${r.name || r.specific_name || '—'}</td>
             <td><span class="badge badge-${(r.category||'').toLowerCase()}">${r.category || '—'}</span></td>
             <td style="color:${GRADE_COLORS[(r.quality_grade||'').toUpperCase()]||'#888'};font-weight:700;">${r.quality_grade || '—'}</td>
             <td>${r.purity_percentage != null ? parseFloat(r.purity_percentage).toFixed(1) + '%' : '—'}</td>
             <td>${r.commercial_value || '—'}</td>
           </tr>
+        `).join('');
+      }
+
+      // Ore class distribution chart
+      const oreClassDist = data.ore_class_distribution || {};
+      if (Object.keys(oreClassDist).length) {
+        el('ore-class-empty').style.display = 'none';
+        el('ore-class-chart-wrap').style.display = 'block';
+        const oreColors = ['#ff6b35','#4fc3f7','#f5c842','#00ff88','#cc2200','#ff8800'];
+        new Chart(el('chart-ore-class'), {
+          type: 'doughnut',
+          data: {
+            labels: Object.keys(oreClassDist).map(k => k.charAt(0).toUpperCase() + k.slice(1)),
+            datasets: [{
+              data: Object.values(oreClassDist),
+              backgroundColor: Object.keys(oreClassDist).map((_, i) => oreColors[i % oreColors.length]),
+              borderColor: '#1a1a24',
+              borderWidth: 3,
+            }],
+          },
+          options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: { legend: { position: 'right', labels: { padding: 16, font: { size: 12 } } } },
+          },
+        });
+      }
+
+      // Classifier engine usage chart
+      const engineDist = data.classifier_source_distribution || {};
+      if (Object.keys(engineDist).length) {
+        el('engine-empty').style.display = 'none';
+        el('engine-chart-wrap').style.display = 'block';
+        const engineLabels = { roboflow: '🤖 Roboflow', gemini: '✨ Gemini AI', ml_fallback: '🔬 ML Model', unknown: '❓ Unknown' };
+        const engineColors = { roboflow: '#4fc3f7', gemini: '#f5c842', ml_fallback: '#ff6b35', unknown: '#888' };
+        new Chart(el('chart-engine'), {
+          type: 'doughnut',
+          data: {
+            labels: Object.keys(engineDist).map(k => engineLabels[k] || k),
+            datasets: [{
+              data: Object.values(engineDist),
+              backgroundColor: Object.keys(engineDist).map(k => engineColors[k] || '#888'),
+              borderColor: '#1a1a24',
+              borderWidth: 3,
+            }],
+          },
+          options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: { legend: { position: 'right', labels: { padding: 16, font: { size: 12 } } } },
+          },
+        });
+      }
+
+      // Integrated dataset sources
+      const sources = data.dataset_sources || [];
+      if (sources.length) {
+        el('dataset-sources-grid').innerHTML = sources.map(s => `
+          <div class="card" style="padding:1rem;">
+            <div style="font-weight:700;color:var(--text-primary);margin-bottom:0.35rem;">${s.name}</div>
+            <div style="font-size:0.82rem;color:var(--text-muted);margin-bottom:0.5rem;">${s.description || ''}</div>
+            ${s.classes ? `<div style="display:flex;flex-wrap:wrap;gap:4px;margin-bottom:0.5rem;">${s.classes.map(c=>`<span class="tag">${c}</span>`).join('')}</div>` : ''}
+            ${s.license ? `<div style="font-size:0.75rem;color:var(--text-muted);margin-bottom:0.35rem;">License: ${s.license}</div>` : ''}
+            <a href="${s.url}" target="_blank" rel="noopener" style="font-size:0.8rem;color:var(--accent-blue);text-decoration:none;">🔗 View dataset →</a>
+          </div>
         `).join('');
       }
 

@@ -50,9 +50,13 @@
   <div class="result-content">
     <div class="container">
 
-      <!-- Confidence -->
+      <!-- Confidence + Classifier Source -->
       <div class="card mb-3">
         <div class="card-header">🎯 AI Confidence Score</div>
+        <div style="display:flex;align-items:center;gap:1rem;flex-wrap:wrap;margin-bottom:0.75rem;">
+          <span id="confidence-badge" class="badge" style="font-size:0.85rem;padding:6px 16px;">—%</span>
+          <span id="classifier-source-badge" class="badge" style="font-size:0.85rem;padding:6px 16px;background:rgba(79,195,247,0.15);color:var(--accent-blue);border:1px solid rgba(79,195,247,0.4);">—</span>
+        </div>
         <div class="confidence-bar-label">
           <span>Confidence</span>
           <span id="confidence-val">—</span>
@@ -60,6 +64,12 @@
         <div class="progress-bar-wrap">
           <div id="confidence-bar" class="progress-bar-fill" style="width:0%;background:linear-gradient(90deg,#4fc3f7,#00ff88);"></div>
         </div>
+      </div>
+
+      <!-- All Predictions bar chart -->
+      <div id="all-predictions-section" class="card mb-3 d-none">
+        <div class="card-header">📊 All Ore Class Predictions</div>
+        <div id="predictions-bars"></div>
       </div>
 
       <!-- Details grid -->

@@ -168,4 +168,96 @@
 
   // Initial load
   loadData();
+
+  // ── Mineral Reference Library ──────────────────────────────────────────
+  let allMinerals = [];
+
+  async function loadMinerals() {
+    try {
+      const res = await fetch('/api/dataset/minerals-meta');
+      const meta = await res.json();
+      allMinerals = meta.minerals || [];
+      const sources = meta.sources || [];
+
+      // Source badges
+      const sourcesEl = document.getElementById('mineral-source-badges');
+      sourcesEl.innerHTML = sources.map(s =>
+        `<a href="${s.url}" target="_blank" rel="noopener"
+            style="display:inline-flex;align-items:center;gap:6px;padding:4px 12px;border-radius:20px;
+                   font-size:0.75rem;font-weight:600;text-decoration:none;
+                   background:rgba(79,195,247,0.1);color:var(--accent-blue);
+                   border:1px solid rgba(79,195,247,0.3);">
+           🔗 ${s.name} (${s.license})
+         </a>`
+      ).join('');
+
+      // Populate category filter
+      const catFilter = document.getElementById('mineral-category-filter');
+      const categories = [...new Set(allMinerals.map(m => m.category))].sort();
+      categories.forEach(c => {
+        const opt = document.createElement('option');
+        opt.value = c; opt.textContent = c;
+        catFilter.appendChild(opt);
+      });
+
+      renderMinerals();
+    } catch (e) {
+      document.getElementById('mineral-cards-grid').innerHTML =
+        `<div style="color:#ff6b6b;padding:2rem;text-align:center;">Failed to load mineral data: ${e.message}</div>`;
+    }
+  }
+
+  function renderMinerals() {
+    const query = (document.getElementById('mineral-search').value || '').toLowerCase();
+    const catFilter = document.getElementById('mineral-category-filter').value;
+
+    const filtered = allMinerals.filter(m => {
+      const matchText = !query ||
+        m.name.toLowerCase().includes(query) ||
+        m.category.toLowerCase().includes(query) ||
+        (m.formula || '').toLowerCase().includes(query);
+      const matchCat = !catFilter || m.category === catFilter;
+      return matchText && matchCat;
+    });
+
+    const grid = document.getElementById('mineral-cards-grid');
+    const emptyEl = document.getElementById('mineral-empty');
+
+    if (!filtered.length) {
+      grid.innerHTML = '';
+      emptyEl.style.display = 'block';
+      return;
+    }
+    emptyEl.style.display = 'none';
+
+    const cvColor = { High: 'var(--accent-gold)', Medium: 'var(--accent-orange)', Low: 'var(--text-muted)' };
+
+    grid.innerHTML = filtered.map(m => {
+      const valueColor = cvColor[m.commercial_value] || 'var(--text-primary)';
+      return `
+      <div class="card" style="display:flex;flex-direction:column;gap:0.5rem;">
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:0.5rem;flex-wrap:wrap;">
+          <div style="font-size:1.05rem;font-weight:700;color:var(--text-primary);">${m.name}</div>
+          <span class="badge" style="font-size:0.7rem;background:rgba(79,195,247,0.1);color:var(--accent-blue);border:1px solid rgba(79,195,247,0.3);">Kaggle</span>
+        </div>
+        <div style="font-family:monospace;font-size:0.82rem;color:var(--accent-blue);">${m.formula || 'N/A'}</div>
+        <div style="font-size:0.8rem;color:var(--text-muted);">${m.category}</div>
+        <div style="display:flex;gap:1.5rem;font-size:0.8rem;color:var(--text-muted);flex-wrap:wrap;">
+          <span>🪨 Hardness: <strong style="color:var(--text-primary);">${m.hardness}</strong></span>
+          <span>🎨 ${m.color}</span>
+        </div>
+        <div style="font-size:0.8rem;">
+          Commercial: <strong style="color:${valueColor};">${m.commercial_value}</strong>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:4px;margin-top:0.25rem;">
+          ${(m.industrial_uses || []).map(u => `<span class="tag" style="font-size:0.72rem;">${u}</span>`).join('')}
+        </div>
+      </div>`;
+    }).join('');
+  }
+
+  document.getElementById('mineral-search').addEventListener('input', renderMinerals);
+  document.getElementById('mineral-category-filter').addEventListener('change', renderMinerals);
+
+  loadMinerals();
 })();

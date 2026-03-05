@@ -80,6 +80,26 @@
       </table>
     </div>
   </div>
+
+  <!-- Ore classification & classifier engine row -->
+  <div class="charts-grid">
+    <div class="chart-card">
+      <div class="chart-title">🪨 Ore Class Distribution</div>
+      <div id="ore-class-empty" style="color:var(--text-muted);font-size:0.9rem;padding:1rem 0;">No session analyses yet. <a href="/" style="color:var(--accent-gold);">Analyze a sample.</a></div>
+      <div class="chart-container" id="ore-class-chart-wrap" style="display:none;"><canvas id="chart-ore-class"></canvas></div>
+    </div>
+    <div class="chart-card">
+      <div class="chart-title">🤖 Classifier Engine Usage</div>
+      <div id="engine-empty" style="color:var(--text-muted);font-size:0.9rem;padding:1rem 0;">No session analyses yet. <a href="/" style="color:var(--accent-gold);">Analyze a sample.</a></div>
+      <div class="chart-container" id="engine-chart-wrap" style="display:none;"><canvas id="chart-engine"></canvas></div>
+    </div>
+  </div>
+
+  <!-- Integrated Datasets card -->
+  <div class="recent-table-card">
+    <div class="chart-title">🗄 Integrated Datasets</div>
+    <div id="dataset-sources-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem;margin-top:0.75rem;"></div>
+  </div>
 </div>
 {% endblock %}
 

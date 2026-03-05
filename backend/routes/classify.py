@@ -13,6 +13,7 @@ logger = logging.getLogger(__name__)
 classify_bp = Blueprint("classify", __name__)
 
 ALLOWED_EXTENSIONS = Config.ALLOWED_EXTENSIONS
+MAX_HISTORY_SIZE = 50
 
 
 def _allowed_file(filename: str) -> bool:
@@ -82,7 +83,12 @@ def classify():
         elif not isinstance(result.get(key), list):
             result[key] = []
 
-    # Store in session for result page
+    # Store in session for result page and history
     session["last_result"] = result
+    history = session.setdefault("analyses_history", [])
+    history.append(result)
+    if len(history) > MAX_HISTORY_SIZE:
+        history[:] = history[-MAX_HISTORY_SIZE:]
+    session.modified = True
 
     return jsonify(result)

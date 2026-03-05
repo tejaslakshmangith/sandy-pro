@@ -1,0 +1,30 @@
+{
+  "sources": [
+    {
+      "name": "Mineral Photos Dataset",
+      "author": "Florian Geillon",
+      "url": "https://www.kaggle.com/datasets/floriangeillon/mineral-photos",
+      "license": "CC BY 4.0"
+    },
+    {
+      "name": "Rock Classification Dataset",
+      "author": "Salman Eunus",
+      "url": "https://www.kaggle.com/datasets/salmaneunus/rock-classification",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "minerals": [
+    {"name": "Quartz",      "formula": "SiO2",    "category": "Silicate",        "hardness": 7,   "color": "White/Clear",  "commercial_value": "Medium", "industrial_uses": ["Electronics", "Glass", "Optics"]},
+    {"name": "Feldspar",    "formula": "KAlSi3O8","category": "Silicate",        "hardness": 6,   "color": "Pink/White",   "commercial_value": "Medium", "industrial_uses": ["Ceramics", "Glass"]},
+    {"name": "Calcite",     "formula": "CaCO3",   "category": "Carbonate",       "hardness": 3,   "color": "White",        "commercial_value": "Medium", "industrial_uses": ["Cement", "Agriculture", "Construction"]},
+    {"name": "Pyrite",      "formula": "FeS2",    "category": "Sulfide Ore",     "hardness": 6.5, "color": "Brass-yellow", "commercial_value": "Medium", "industrial_uses": ["Sulfuric acid production", "Electronics"]},
+    {"name": "Hematite",    "formula": "Fe2O3",   "category": "Iron Ore",        "hardness": 5.5, "color": "Red/Silver",   "commercial_value": "High",   "industrial_uses": ["Steel production", "Pigments"]},
+    {"name": "Magnetite",   "formula": "Fe3O4",   "category": "Iron Ore",        "hardness": 5.5, "color": "Black",        "commercial_value": "High",   "industrial_uses": ["Steel production", "Magnets"]},
+    {"name": "Ilmenite",    "formula": "FeTiO3",  "category": "Titanium Ore",    "hardness": 5.5, "color": "Black",        "commercial_value": "High",   "industrial_uses": ["Titanium dioxide", "Aerospace"]},
+    {"name": "Limonite",    "formula": "FeO(OH)", "category": "Iron Ore",        "hardness": 4,   "color": "Yellow-brown", "commercial_value": "Medium", "industrial_uses": ["Pigments", "Iron ore"]},
+    {"name": "Granite",     "formula": "N/A",     "category": "Igneous Rock",    "hardness": 7,   "color": "Gray/Pink",    "commercial_value": "Medium", "industrial_uses": ["Construction", "Countertops"]},
+    {"name": "Basalt",      "formula": "N/A",     "category": "Igneous Rock",    "hardness": 6,   "color": "Dark gray",    "commercial_value": "Low",    "industrial_uses": ["Construction", "Road base"]},
+    {"name": "Sandstone",   "formula": "SiO2",    "category": "Sedimentary Rock","hardness": 6,   "color": "Tan/Brown",    "commercial_value": "Low",    "industrial_uses": ["Construction", "Filtration"]},
+    {"name": "Limestone",   "formula": "CaCO3",   "category": "Sedimentary Rock","hardness": 3,   "color": "White/Gray",   "commercial_value": "Medium", "industrial_uses": ["Cement", "Agriculture"]}
+  ]
+}

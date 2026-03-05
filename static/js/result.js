@@ -41,9 +41,9 @@
   badge.className = 'category-banner ' + (CAT_CLASSES[cat] || 'badge-rock');
 
   // Name & formula
-  el('result-name').textContent = d.specific_name || 'Unknown Sample';
+  el('result-name').textContent = d.name || d.specific_name || 'Unknown Sample';
   el('result-formula').textContent = d.chemical_formula ? '⚗ ' + d.chemical_formula : '';
-  el('result-common').textContent = d.common_name ? '📌 ' + d.common_name : '';
+  el('result-common').textContent = d.common_name ? '📌 ' + d.common_name : (d.roboflow_class ? '🏷 ' + d.roboflow_class : '');
 
   // Grade badge
   const grade = (d.quality_grade || 'C2').toUpperCase();
@@ -72,9 +72,47 @@
   });
 
   // Confidence
-  const conf = parseFloat(d.confidence_score) || 0;
+  const conf = parseFloat(d.confidence || d.confidence_score) || 0;
   el('confidence-val').textContent = conf.toFixed(0) + '%';
   setTimeout(() => { el('confidence-bar').style.width = conf + '%'; }, 200);
+
+  // Confidence badge colour
+  const confBadge = el('confidence-badge');
+  confBadge.textContent = conf.toFixed(0) + '%';
+  if (conf >= 80) {
+    confBadge.style.cssText = 'font-size:0.85rem;padding:6px 16px;background:rgba(0,255,136,0.15);color:#00ff88;border:1px solid rgba(0,255,136,0.4);';
+  } else if (conf >= 50) {
+    confBadge.style.cssText = 'font-size:0.85rem;padding:6px 16px;background:rgba(245,200,66,0.15);color:#f5c842;border:1px solid rgba(245,200,66,0.4);';
+  } else {
+    confBadge.style.cssText = 'font-size:0.85rem;padding:6px 16px;background:rgba(255,68,0,0.15);color:#ff4400;border:1px solid rgba(255,68,0,0.4);';
+  }
+
+  // Classifier source badge
+  const srcBadge = el('classifier-source-badge');
+  const srcMap = { roboflow: '🤖 Roboflow', gemini: '✨ Gemini AI', ml_fallback: '🔬 ML Model' };
+  const srcLabel = srcMap[d.classifier_source] || (d.source === 'ml_classifier' ? '🔬 ML Model' : '✨ Gemini AI');
+  srcBadge.textContent = srcLabel;
+
+  // All predictions bar chart
+  const preds = d.all_predictions;
+  if (Array.isArray(preds) && preds.length) {
+    el('all-predictions-section').classList.remove('d-none');
+    const maxConf = Math.max(...preds.map(p => p.confidence || 0)) || 1;
+    el('predictions-bars').innerHTML = preds.map(p => {
+      const pct = ((p.confidence || 0) / maxConf * 100).toFixed(1);
+      const rawPct = ((p.confidence || 0) * 100).toFixed(1);
+      const label = (p.class || '').replace(/\b\w/g, c => c.toUpperCase());
+      return `<div style="margin-bottom:0.6rem;">
+        <div style="display:flex;justify-content:space-between;font-size:0.82rem;margin-bottom:3px;">
+          <span style="color:var(--text-primary);">${label}</span>
+          <span style="color:var(--accent-gold);">${rawPct}%</span>
+        </div>
+        <div class="progress-bar-wrap">
+          <div class="progress-bar-fill" style="width:${pct}%;background:linear-gradient(90deg,var(--accent-blue),var(--accent-green));transition:width 1s ease;"></div>
+        </div>
+      </div>`;
+    }).join('');
+  }
 
   // Hardness bar
   const hardness = parseFloat(d.hardness_mohs) || 0;
@@ -118,7 +156,8 @@
   envEl.textContent = d.environmental_impact || '—';
   envEl.className = 'info-value env-' + (d.environmental_impact || '').toLowerCase();
 
-  el('val-source').textContent = d.source === 'ml_classifier' ? 'ML Classifier (fallback)' : 'Gemini 2.5 Pro';
+  const srcMap2 = { roboflow: 'Roboflow', gemini: 'Gemini 2.5 Pro', ml_fallback: 'ML Classifier (fallback)' };
+  el('val-source').textContent = srcMap2[d.classifier_source] || (d.source === 'ml_classifier' ? 'ML Classifier (fallback)' : 'Gemini 2.5 Pro');
 
   // Tags helper
   function renderTags(containerId, items, color) {
@@ -139,7 +178,7 @@
   renderTags('uses-tags', d.industrial_uses, 'var(--accent-gold)');
 
   // Analysis notes
-  el('analysis-notes').textContent = d.analysis_notes || 'No analysis notes provided.';
+  el('analysis-notes').textContent = d.description || d.analysis_notes || 'No analysis notes provided.';
 
   // Processing steps
   const procContainer = el('processing-steps');
