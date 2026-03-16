@@ -15,4 +15,6 @@ def health():
         "gemini_model": Config.GEMINI_PRO_MODEL,
         "flash_model": Config.GEMINI_FLASH_MODEL,
         "api_key_configured": bool(Config.GEMINI_API_KEY),
+        "roboflow_api_key_configured": bool(Config.ROBOFLOW_API_KEY),
+        "roboflow_project": f"{Config.ROBOFLOW_WORKSPACE}/{Config.ROBOFLOW_PROJECT}",
     })
